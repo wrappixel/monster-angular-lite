@@ -1,0 +1,66 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Default pagination</h3>
+                <h6 class="card-subtitle">This is basic Default pagination</h6>
+                <ngb-pagination [collectionSize]="70" [(page)]="page" aria-label="Default pagination"></ngb-pagination>
+
+				<div>directionLinks = false</div>
+				<ngb-pagination [collectionSize]="70" [(page)]="page" [directionLinks]="false"></ngb-pagination>
+
+				<div>boundaryLinks = true</div>
+				<ngb-pagination [collectionSize]="70" [(page)]="page" [boundaryLinks]="true"></ngb-pagination>
+
+				<hr>
+
+				<pre>Current page: {{page}}</pre>
+  			</div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Advanced pagination</h3>
+                <h6 class="card-subtitle">This is Advanced pagination</h6>
+                <div>maxSize = 5, rotate = false</div>
+                <ngb-pagination [collectionSize]="120" [(page)]="page2" [maxSize]="5" [boundaryLinks]="true"></ngb-pagination>
+
+				<div>maxSize = 5, rotate = true</div>
+				<ngb-pagination [collectionSize]="120" [(page)]="page2" [maxSize]="5" [rotate]="true" [boundaryLinks]="true"></ngb-pagination>
+
+				<div>maxSize = 5, rotate = true, ellipses = false</div>
+				<ngb-pagination [collectionSize]="120" [(page)]="page2" [maxSize]="5" [rotate]="true" [ellipses]="false" [boundaryLinks]="true"></ngb-pagination>
+
+				<hr>
+
+				<pre>Current page: {{page2}}</pre>
+  			</div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Pagination size</h3>
+                <h6 class="card-subtitle">This is Pagination size</h6>
+                <ngb-pagination [collectionSize]="50" [(page)]="currentPage" size="lg"></ngb-pagination>
+				<ngb-pagination [collectionSize]="50" [(page)]="currentPage"></ngb-pagination>
+				<ngb-pagination [collectionSize]="50" [(page)]="currentPage" size="sm"></ngb-pagination>
+  			</div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Disabled pagination</h3>
+                <h6 class="card-subtitle">This is Disabled pagination</h6>
+                <p>Pagination control can be disabled:</p>
+				<ngb-pagination [collectionSize]="70" [(page)]="disablepage" [disabled]='isDisabled'></ngb-pagination>
+				<hr>
+				<button class="btn btn-sm btn-outline-primary" (click)="toggleDisabled()">
+				  Toggle disabled
+				</button>
+  			</div>
+        </div>
+    </div>
+</div>

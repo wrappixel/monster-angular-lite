@@ -1,0 +1,124 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Quick and easy popovers</h3>
+                <h6 class="card-subtitle">This is basic popovers</h6>
+                <div class="button-box">
+                    <button type="button" class="btn btn-secondary" placement="top"
+                            ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on top">
+                      Popover on top
+                    </button>
+
+                    <button type="button" class="btn btn-secondary" placement="right"
+                            ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on right">
+                      Popover on right
+                    </button>
+
+                    <button type="button" class="btn btn-secondary" placement="bottom"
+                            ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on bottom">
+                      Popover on bottom
+                    </button>
+
+                    <button type="button" class="btn btn-secondary" placement="left"
+                            ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on left">
+                      Popover on left
+                    </button>
+                </div>
+  			</div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">HTML and bindings in popovers</h3>
+                <h6 class="card-subtitle">Popovers can contain any arbitrary HTML, Angular bindings and even directives!
+  Simply enclose desired content in a <code>&lt;ng-template&gt;</code> element.</h6>
+                <ng-template #popContent>Hello, <b>{{name}}</b>!</ng-template>
+                <button type="button" class="btn btn-secondary" [ngbPopover]="popContent" popoverTitle="Fancy content">
+                  I've got markup and bindings in my popover!
+                </button>
+                
+  			</div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Custom and manual triggers</h3>
+                <h6 class="card-subtitle">You can easily override open and close triggers by specifying event names (separated by <code>:</code>) in the <code>triggers</code> property.</h6>
+                <button type="button" class="btn btn-secondary" ngbPopover="You see, I show up on hover!" triggers="mouseenter:mouseleave" popoverTitle="Pop title">  Hover over me!</button>
+                
+  			</div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Popover visibility events</h3>
+                <h6 class="card-subtitle">This is popover event</h6>
+                <button type="button" class="btn btn-secondary" placement="top" ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." popoverTitle="Popover on top" #popover="ngbPopover"> Open Popover</button>
+                Popover is currently: <code>{{ popover.isOpen() ? 'open' : 'closed' }}</code>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Quick and easy tooltips</h3>
+                <h6 class="card-subtitle">This is Quick and easy tooltips</h6>
+                <div class="button-box">
+                <button type="button" class="btn btn-secondary" placement="top" ngbTooltip="Tooltip on top">
+                  Tooltip on top
+                </button>
+                <button type="button" class="btn btn-secondary" placement="right" ngbTooltip="Tooltip on right">
+                  Tooltip on right
+                </button>
+                <button type="button" class="btn btn-secondary" placement="bottom" ngbTooltip="Tooltip on bottom">
+                  Tooltip on bottom
+                </button>
+                <button type="button" class="btn btn-secondary" placement="left" ngbTooltip="Tooltip on left">
+                  Tooltip on left
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">HTML and bindings in tooltips</h3>
+                <h6 class="card-subtitle">Tooltips can contain any arbitrary HTML, Angular bindings and even directives! Simply enclose desired content in a <code>ng-template</code> element.</h6>
+                <ng-template #tipContent>Hello, <b>{{name}}</b>!</ng-template>
+                <button type="button" class="btn btn-secondary" [ngbTooltip]="tipContent">
+                  I've got markup and bindings in my tooltip!
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Custom and manual triggers</h3>
+                <h6 class="card-subtitle">You can easily override open and close triggers by specifying event names (separated by :) in the triggers property.</h6>
+                <button type="button" class="btn btn-secondary" ngbTooltip="You see, I show up on click!" triggers="click:blur"> Click me!</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Popover visibility events</h3>
+                <h6 class="card-subtitle">This is Disabled pagination</h6>
+                <div class="button-box">
+                <button type="button" class="btn btn-secondary" ngbTooltip="What a great tip!" triggers="manual" #t="ngbTooltip" (click)="t.open()">
+                  Click me to open a tooltip
+                </button>
+                <button type="button" class="btn btn-secondary" (click)="t.close()">
+                  Click me to close a tooltip
+                </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

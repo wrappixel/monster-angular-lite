@@ -1,0 +1,99 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Timepicker</h3>
+                <h6 class="card-subtitle">This is basic Timepicker</h6>
+                <ngb-timepicker [(ngModel)]="time"></ngb-timepicker>
+                <pre>Selected time: {{time | json}}</pre>
+  			</div> 
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Spinners</h3>
+                <h6 class="card-subtitle">This is Spinners</h6>
+                <ngb-timepicker [(ngModel)]="time" [spinners]="spinners"></ngb-timepicker>
+                <button class="m-t-1 m-t-10 btn btn-sm btn-outline-{{spinners ? 'success' : 'danger'}}" (click)="toggleSpinners()">
+                    Spinners - {{spinners ? "ON" : "OFF"}}
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Meridian</h3>
+                <h6 class="card-subtitle">This is Meridian Timepicker</h6>
+                <ngb-timepicker [(ngModel)]="time" [meridian]="meridian"></ngb-timepicker>
+                <button class="btn btn-sm btn-outline-{{meridian ? 'success' : 'danger'}}" (click)="toggleMeridian()">
+                    Meridian - {{meridian ? "ON" : "OFF"}}
+                </button>
+                <hr>
+                <pre>Selected time: {{time | json}}</pre>
+  			</div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Seconds</h3>
+                <h6 class="card-subtitle">This is Seconds with the on off</h6>
+                <ngb-timepicker [(ngModel)]="time" [seconds]="seconds"></ngb-timepicker>
+                <button class="btn btn-sm btn-outline-{{seconds ? 'success' : 'danger'}}" (click)="toggleSeconds()">
+                    Seconds - {{seconds ? "ON" : "OFF"}}
+                </button>
+                <hr>
+                <pre>Selected time: {{time | json}}</pre> 
+  			</div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Custom steps</h3>
+                <h6 class="card-subtitle">This is Custom steps</h6>
+                <ngb-timepicker [(ngModel)]="time2" [seconds]="true"
+                    [hourStep]="hourStep" [minuteStep]="minuteStep" [secondStep]="secondStep"></ngb-timepicker>
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <label for="changeHourStep">Hour Step</label>
+                        <input id="changeHourStep" type="number" class="form-control form-control" [(ngModel)]="hourStep" />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="changeMinuteStep">Minute Step</label>
+                        <input id="changeMinuteStep" type="number" class="form-control form-control" [(ngModel)]="minuteStep" />
+                    </div>
+                    <div class="col-md-3">
+                        <label for="changeSecondStep">Second Step</label>
+                        <input id="changeSecondStep" type="number" class="form-control form-control" [(ngModel)]="secondStep" />
+                    </div>
+                </div>
+                
+                <pre class="m-t-20">Selected time: {{time2 | json}}</pre>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Custom validation</h3>
+                <h6 class="card-subtitle">Illustrates custom validation, you have to select time between 12:00 and 13:59</h6>
+                <div class="form-group" [class.has-success]="ctrl.valid" [class.has-danger]="!ctrl.valid">
+                  <ngb-timepicker [(ngModel)]="time3" [formControl]="ctrl" required></ngb-timepicker>
+                  <div class="form-control-feedback">
+                    <div *ngIf="ctrl.valid">Great choice</div>
+                    <div *ngIf="ctrl.errors && ctrl.errors['required']">Select some time during lunchtime</div>
+                    <div *ngIf="ctrl.errors && ctrl.errors['tooLate']">Oh no, it's way too late</div>
+                    <div *ngIf="ctrl.errors && ctrl.errors['tooEarly']">It's a bit too early</div>
+                  </div>
+                </div> 
+
+                <hr>
+                <pre>Selected time: {{time3 | json}}</pre>  
+            </div>
+        </div>
+    </div>
+</div>
