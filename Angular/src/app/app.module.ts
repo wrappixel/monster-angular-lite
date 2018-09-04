@@ -1,7 +1,7 @@
 import * as $ from 'jquery';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
@@ -11,21 +11,20 @@ import { AppComponent } from './app.component';
 import { SpinnerComponent } from './shared/spinner.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    SpinnerComponent
-  ],
+  declarations: [AppComponent, SpinnerComponent],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,   
+    BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [{
-    provide: LocationStrategy,
-    useClass: HashLocationStrategy
-  }],
+  providers: [
+    {
+      provide: LocationStrategy,
+      useClass: PathLocationStrategy
+    }
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
