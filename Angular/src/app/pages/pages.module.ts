@@ -5,6 +5,7 @@ import { PageComponent } from './pages.component';
 import { SIDEBAR_TOGGLE_DIRECTIVES } from '../shared/sidebar.directive';
 import { NavigationComponent } from '../shared/header-navigation/navigation.component';
 import { SidebarComponent } from '../shared/sidebar/sidebar.component';
+import { BreadcrumbComponent } from '../shared/breadcrumb/breadcrumb.component';
 
 @NgModule({
     imports: [
@@ -15,6 +16,7 @@ import { SidebarComponent } from '../shared/sidebar/sidebar.component';
         PageComponent,
         NavigationComponent,
         SidebarComponent,
+        BreadcrumbComponent,
         SIDEBAR_TOGGLE_DIRECTIVES
     ]
 })
