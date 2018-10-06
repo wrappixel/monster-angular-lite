@@ -1,6 +1,6 @@
 # AdminAngular
 <a href="https://wrappixel.com/templates/monster-angular-dashboard/">
-<img src="https://wrappixel.com/wp-content/uploads/edd/2018/01/monster-angular-admin.jpg" /></a><br/<
+<img src="https://wrappixel.com/wp-content/uploads/edd/2018/01/monster-angular-admin.jpg" /></a><br/>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 <h4>Check this Repo Live Demo</h4>
 <h3><a href="https://wrappixel.com/demos/angular-admin-templates/monster-angular-lite/">Demo</a></h3>
