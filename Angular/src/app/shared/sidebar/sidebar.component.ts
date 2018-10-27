@@ -1,8 +1,8 @@
 import { Component, AfterViewInit, OnInit } from '@angular/core';
-
+declare var $: any;
 @Component({
   // tslint:disable-next-line:component-selector
-  selector: 'ap-sidebar',
+  selector: 'app-sidebar',
   templateUrl: './sidebar.component.html'
 })
 export class SidebarComponent implements AfterViewInit {
