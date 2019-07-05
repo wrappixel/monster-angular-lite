@@ -1,0 +1,222 @@
+<div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Datepicker Basic</h3>
+                <h6 class="card-subtitle">This is basic datepicker</h6>
+                <p>Simple datepicker</p>
+                <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
+                <div class="dl">
+                    <span class="m-l-20">Month: {{ date.month }}.{{ date.year }}</span><br /><br />
+                    <span class="m-l-20">Model: {{ model | json }}</span>
+                </div>
+                <div class="m-t-20">
+                    <button class="btn btn-sm btn-outline-info" (click)="selectToday()">Select Today</button>
+                    <button class="btn btn-sm btn-outline-info" (click)="dp.navigateTo()">To current month</button>
+                    <button class="btn btn-sm btn-outline-info" (click)="dp.navigateTo({year: 2013, month: 2})">To Feb
+                        2013</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Disabled datepicker</h3>
+                <h6 class="card-subtitle">This is Disabled datepicker</h6>
+                <ngb-datepicker [(ngModel)]="model3" [disabled]="disabled"></ngb-datepicker>
+
+                <div class="m-t-20"><button class="btn btn-sm btn-outline-{{disabled ? 'danger' : 'success'}}" (click)="disabled = !disabled">
+                        {{ disabled ? "disabled" : "enabled"}}
+                    </button></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Datepicker Multiple months</h3>
+                <h6 class="card-subtitle">This is datepicker Multiple months</h6>
+                <ngb-datepicker [displayMonths]="displayMonths" [navigation]="navigation"></ngb-datepicker>
+                <hr />
+                <form class="form-inline">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [displayMonths]="displayMonths"
+                                [navigation]="navigation" [showWeekNumbers]="showWeekNumbers" ngbDatepicker #e="ngbDatepicker">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" (click)="e.toggle()" type="button">
+                                    <i class="fa fa-calendar"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <hr />
+                <select class="custom-select" [(ngModel)]="displayMonths">
+                    <option [ngValue]="1">One month</option>
+                    <option [ngValue]="2">Two months</option>
+                    <option [ngValue]="3">Three months</option>
+                </select>
+                <select class="custom-select" [(ngModel)]="navigation">
+                    <option value="none">Without navigation</option>
+                    <option value="select">With select boxes</option>
+                    <option value="arrows">Without select boxes</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Datepicker in a popup</h3>
+                <h6 class="card-subtitle">This is datepicker with popup</h6>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input class="form-control" placeholder="yyyy-mm-dd" name="dp2" [(ngModel)]="model"
+                                ngbDatepicker #d3="ngbDatepicker">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary no-shadow" (click)="d3.toggle()" type="button">
+                                    <i class="fa fa-calendar"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <hr />
+                <pre>Model: {{ model2 | json }}</pre>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Range Datepicker</h3>
+                <h6 class="card-subtitle">Example of the range selection</h6>
+                <ngb-datepicker #dp ngModel (ngModelChange)="onDateChange($event)" [displayMonths]="2" [dayTemplate]="t">
+                </ngb-datepicker>
+
+                <ng-template #t let-date="date" let-focused="focused">
+                    <span class="custom-day" [class.focused]="focused" [class.range]="isFrom(date) || isTo(date) || isInside(date) || isHovered(date)"
+                        [class.faded]="isHovered(date) || isInside(date)" (mouseenter)="hoveredDate = date"
+                        (mouseleave)="hoveredDate = null">
+                        {{ date.day }}
+                    </span>
+                </ng-template>
+
+                <hr>
+                <div class="row">
+                    <pre class="col-md-6">From: {{ fromDate | json }} </pre>
+                    <pre class="col-md-6">To: {{ toDate | json }} </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Custom date adapter</h3>
+                <h6 class="card-subtitle">
+                    These datepickers use custom Date adapter that lets you use your own model implementation. In this
+                    example we are converting from and to a JS native Date object</h6>
+                <div class="row">
+                    <div class="col-6">
+                        <ngb-datepicker #d1 [(ngModel)]="model1" #c1="ngModel"></ngb-datepicker>
+
+                        <hr />
+                        <button class="btn btn-sm btn-outline-primary" (click)="model1 = today">Select Today</button>
+                        <hr />
+
+                        <pre>Model: {{ model1 | json }}</pre>
+                        <pre>State: {{ c1.status }}</pre>
+                    </div>
+
+                    <div class="col-6">
+                        <form class="form-inline">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input class="form-control" placeholder="yyyy-mm-dd" name="d2" #c2="ngModel"
+                                        [(ngModel)]="model11" ngbDatepicker #d2="ngbDatepicker">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary calendar" (click)="d2.toggle()" type="button"><i
+                                                class="fa fa-calendar"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+
+                        <hr />
+                        <button class="btn btn-sm btn-outline-primary" (click)="model11 = today">Select Today</button>
+                        <hr />
+
+
+                        <pre>Model: {{ model11 | json }}</pre>
+                        <pre>State: {{ c2.status }}</pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Custom day view</h3>
+                <p>This datepicker uses a custom template to display days. All week-ends are displayed with an orange
+                    background.</p>
+
+                <form class="form-inline">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="model4"
+                                ngbDatepicker [dayTemplate]="customDay" [markDisabled]="isDisabled" #d="ngbDatepicker">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary calendar" (click)="d.toggle()" type="button"><i
+                                        class="fa fa-calendar"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <ng-template #customDay let-date let-currentMonth="currentMonth" let-selected="selected" let-disabled="disabled"
+                    let-focused="focused">
+                    <span class="custom-day" [class.weekend]="isWeekend(date)" [class.focused]="focused"
+                        [class.bg-primary]="selected" [class.hidden]="date.month !== currentMonth" [class.text-muted]="disabled">
+                        {{ date.day }}
+                    </span>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Footer template</h3>
+                <p>This datepicker uses a footer template which is presented inside datepicker. Today and close buttons
+                    used as an example.</p>
+
+                <form class="form-inline">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input class="form-control" placeholder="yyyy-mm-dd" name="dp1" [(ngModel)]="model5"
+                                ngbDatepicker [footerTemplate]="footerTemplate" #d1="ngbDatepicker">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary calendar" (click)="d1.toggle()" type="button"><i
+                                        class="fa fa-calendar"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <ng-template #footerTemplate>
+                    <hr class="my-0">
+                    <button class="btn btn-primary btn-sm m-2 float-left" (click)="model5 = today5; d1.close()">Today</button>
+                    <button class="btn btn-secondary btn-sm m-2 float-right" (click)="d1.close()">Close</button>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,590 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Quick and easy popovers</h3>
+        <h6 class="card-subtitle">This is basic popovers</h6>
+        <div class="button-box">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            placement="top"
+            ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+            popoverTitle="Popover on top"
+          >
+            Popover on top
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-secondary"
+            placement="right"
+            ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+            popoverTitle="Popover on right"
+          >
+            Popover on right
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-secondary"
+            placement="bottom"
+            ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+            popoverTitle="Popover on bottom"
+          >
+            Popover on bottom
+          </button>
+
+          <button
+            type="button"
+            class="btn btn-secondary"
+            placement="left"
+            ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+            popoverTitle="Popover on left"
+          >
+            Popover on left
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">HTML and bindings in popovers</h3>
+        <h6 class="card-subtitle">
+          Popovers can contain any arbitrary HTML, Angular bindings and even
+          directives! Simply enclose desired content in a
+          <code>&lt;ng-template&gt;</code> element.
+        </h6>
+        <ng-template #popContent
+          >Hello, <b>{{ name }}</b
+          >!</ng-template
+        >
+        <button
+          type="button"
+          class="btn btn-secondary"
+          [ngbPopover]="popContent"
+          popoverTitle="Fancy content"
+        >
+          I've got markup and bindings in my popover!
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Custom triggers</h3>
+        <h6 class="card-subtitle">
+          You can easily override open and close triggers by specifying event
+          names (separated by <code>:</code>) in the
+          <code>triggers</code> property.
+        </h6>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          ngbPopover="You see, I show up on hover!"
+          triggers="mouseenter:mouseleave"
+          popoverTitle="Pop title"
+        >
+          Hover over me!
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Manual triggers</h3>
+        <h6 class="card-subtitle">
+          Alternatively you can take full manual control over popover opening /
+          closing events.
+        </h6>
+        <button
+          type="button"
+          class="btn btn-outline-secondary mr-2"
+          ngbPopover="What a great tip!"
+          [autoClose]="false"
+          triggers="manual"
+          #p1="ngbPopover"
+          (click)="p1.open()"
+          popoverTitle="Pop title"
+        >
+          Click me to open a popover
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary mr-2"
+          (click)="p1.close()"
+        >
+          Click me to close a popover
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Automatic closing with keyboard and mouse</h3>
+        <h6 class="card-subtitle">
+          As for some other popup-based widgets, you can set the popover to
+          close automatically upon some events.
+        </h6>
+        <ul>
+          <li class="mb-2">
+            click inside:
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              popoverTitle="Pop title"
+              [autoClose]="'inside'"
+              ngbPopover="Click inside or press Escape to close"
+            >
+              Click to toggle
+            </button>
+          </li>
+
+          <li class="mb-2">
+            click outside:
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              popoverTitle="Pop title"
+              [autoClose]="'outside'"
+              ngbPopover="Click outside or press Escape to close"
+            >
+              Click to toggle
+            </button>
+          </li>
+
+          <li class="mb-2">
+            all clicks:
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              popoverTitle="Pop title"
+              [autoClose]="true"
+              ngbPopover="Click anywhere or press Escape to close (try the toggling element too)"
+              #popover3="ngbPopover"
+            >
+              Click to toggle
+            </button>
+            &nbsp;
+            <button
+              type="button"
+              class="btn btn-outline-secondary mr-2"
+              (click)="popover3.toggle()"
+            >
+              Click to toggle the external popover
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Context and manual triggers</h3>
+        <h6 class="card-subtitle">
+          You can optionally pass in a context when manually triggering a
+          popover.
+        </h6>
+        <ng-template #popContent let-greeting="greeting"
+          >{{ greeting }}, <b>{{ name }}</b
+          >!</ng-template
+        >
+        <p>
+          How would you like to greet
+          <strong
+            [ngbPopover]="popContent"
+            popoverTitle="Greeting"
+            #p="ngbPopover"
+            triggers="manual"
+            >me</strong
+          >?
+        </p>
+        <button
+          type="button"
+          class="btn btn-outline-secondary mr-2"
+          (click)="changeGreeting({ greeting: 'Bonjour' })"
+        >
+          French
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary mr-2"
+          (click)="changeGreeting({ greeting: 'Gutentag' })"
+        >
+          German
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary mr-2"
+          (click)="changeGreeting({ greeting: 'Hello' })"
+        >
+          English
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Popover Visibility Events</h3>
+        <h6 class="card-subtitle">
+          You can optionally pass in a context when manually triggering a
+          popover.
+        </h6>
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          placement="top"
+          ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+          popoverTitle="Popover on top"
+          #popover="ngbPopover"
+          (shown)="recordShown()"
+          (hidden)="recordHidden()"
+        >
+          Open Popover
+        </button>
+        <hr />
+        <ul>
+          <li>
+            Popover is currently:
+            <code>{{ popover.isOpen() ? 'open' : 'closed' }}</code>
+          </li>
+          <li>
+            Last shown at: <code>{{ lastShown | date: 'h:mm:ss' }}</code>
+          </li>
+          <li>
+            Last hidden at: <code>{{ lastHidden | date: 'h:mm:ss' }}</code>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Append popover in the body</h3>
+        <p>
+          Set the <code>container</code> property to "body" to have the popover
+          be appended to the body instead of the triggering element's parent.
+          This option is useful if the element triggering the popover is inside
+          an element that clips its contents (i.e.
+          <code>overflow: hidden</code>).
+        </p>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card px-1 py-5">
+              <button
+                type="button"
+                class="btn btn-outline-secondary mb-2"
+                ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+              >
+                Default popover
+              </button>
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                ngbPopover="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+                container="body"
+              >
+                Popover appended to body
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Custom and manual triggers</h3>
+        <h6 class="card-subtitle">
+          You can easily override open and close triggers by specifying event
+          names (separated by :) in the triggers property.
+        </h6>
+        <button
+          type="button"
+          class="btn btn-secondary"
+          ngbTooltip="You see, I show up on click!"
+          triggers="click:blur"
+        >
+          Click me!
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Quick and easy tooltips</h3>
+        <h6 class="card-subtitle">This is Quick and easy tooltips</h6>
+        <div class="button-box">
+          <button
+            type="button"
+            class="btn btn-secondary"
+            placement="top"
+            ngbTooltip="Tooltip on top"
+          >
+            Tooltip on top
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            placement="right"
+            ngbTooltip="Tooltip on right"
+          >
+            Tooltip on right
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            placement="bottom"
+            ngbTooltip="Tooltip on bottom"
+          >
+            Tooltip on bottom
+          </button>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            placement="left"
+            ngbTooltip="Tooltip on left"
+          >
+            Tooltip on left
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">HTML and bindings in tooltips</h3>
+        <h6 class="card-subtitle">
+          Tooltips can contain any arbitrary HTML, Angular bindings and even
+          directives! Simply enclose desired content in a
+          <code>ng-template</code> element.
+        </h6>
+        <ng-template #tipContent
+          >Hello, <b>{{ name }}</b
+          >!</ng-template
+        >
+        <button
+          type="button"
+          class="btn btn-secondary"
+          [ngbTooltip]="tipContent"
+        >
+          I've got markup and bindings in my tooltip!
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Custom and manual triggers</h3>
+        <h6 class="card-subtitle">
+          You can easily override open and close triggers by specifying event
+          names (separated by :) in the triggers property.
+        </h6>
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          ngbTooltip="You see, I show up on click!"
+          triggers="click:blur"
+        >
+          Click me!
+        </button>
+        <hr />
+        <button
+          type="button"
+          class="btn btn-outline-secondary mr-2"
+          ngbTooltip="What a great tip!"
+          [autoClose]="false"
+          triggers="manual"
+          #t="ngbTooltip"
+          (click)="t.open()"
+        >
+          Click me to open a tooltip
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary mr-2"
+          (click)="t.close()"
+        >
+          Click me to close a tooltip
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Automatic closing with keyboard and mouse</h3>
+        <h6 class="card-subtitle">
+          As for some other popup-based widgets, you can set the tooltip to
+          close automatically upon some events.
+        </h6>
+        <ul>
+          <li class="mb-2">
+            click inside:
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              triggers="click"
+              [autoClose]="'inside'"
+              ngbTooltip="Click inside or press Escape to close"
+            >
+              Click to toggle
+            </button>
+          </li>
+
+          <li class="mb-2">
+            click outside:
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              triggers="click"
+              [autoClose]="'outside'"
+              ngbTooltip="Click outside or press Escape to close"
+            >
+              Click to toggle
+            </button>
+          </li>
+
+          <li class="mb-2">
+            all clicks:
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              triggers="click"
+              [autoClose]="true"
+              ngbTooltip="Click anywhere or press Escape to close (try the toggling element too)"
+              #tooltip3="ngbTooltip"
+            >
+              Click to toggle
+            </button>
+
+            &nbsp;
+
+            <button
+              type="button"
+              class="btn btn-outline-secondary mr-2"
+              (click)="tooltip3.toggle()"
+            >
+              Click to toggle the external tooltip
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Context and manual triggers</h3>
+        <h6 class="card-subtitle">
+          You can optionally pass in a context when manually triggering a
+          tooltip.
+        </h6>
+        <ng-template #tipContent let-greeting="greeting"
+          >{{ greeting }}, <b>{{ name }}</b
+          >!</ng-template
+        >
+        <button
+          type="button"
+          class="btn btn-outline-secondary mr-2"
+          [ngbTooltip]="tipContent"
+          triggers="manual"
+          #t1="ngbTooltip"
+          (click)="toggleWithGreeting(t1, 'Bonjour')"
+        >
+          French
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary mr-2"
+          [ngbTooltip]="tipContent"
+          triggers="manual"
+          #t2="ngbTooltip"
+          (click)="toggleWithGreeting(t2, 'Gutentag')"
+        >
+          German
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-secondary mr-2"
+          [ngbTooltip]="tipContent"
+          triggers="manual"
+          #t3="ngbTooltip"
+          (click)="toggleWithGreeting(t3, 'Hello')"
+        >
+          English
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Append tooltip in the body</h3>
+        <h6 class="card-subtitle">
+          Set the container property to "body" to have the tooltip be appended
+          to the body instead of the triggering element's parent. This option is
+          useful if the element triggering the tooltip is inside an element that
+          clips its contents (i.e. overflow: hidden).
+        </h6>
+        <div class="row">
+          <div class="card px-1 py-5">
+            <button
+              type="button"
+              class="btn btn-outline-secondary mb-2"
+              ngbTooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+            >
+              Default tooltip
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-secondary"
+              ngbTooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+              container="body"
+            >
+              Tooltip appended to body
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title">Tooltip with custom class</h3>
+        <h6 class="card-subtitle">
+          You can optionally pass in a custom class via tooltipClass
+        </h6>
+        <button
+          type="button"
+          class="btn btn-outline-secondary"
+          ngbTooltip="Nice class!"
+          tooltipClass="my-custom-class"
+        >
+          Tooltip with custom class
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,9 +1,9 @@
-# AdminAngular
-<a href="https://wrappixel.com/templates/monster-angular-dashboard/">
-<img src="https://wrappixel.com/wp-content/uploads/edd/2018/01/monster-angular-admin.jpg" /></a><br/>
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
+# xtreme-admin-angular-lite
+<a href="https://wrappixel.com/templates/xtreme-angular-6-admin/"><img src="https://wrappixel.com/wp-content/uploads/edd/2018/07/xtreme-angular-wp-new-pr1.jpg" /></a><br/>
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
+
 <h4>Check this Repo Live Demo</h4>
-<h3><a href="https://wrappixel.com/demos/angular-admin-templates/monster-angular-lite/">Demo</a></h3>
+<h3><a href="https://wrappixel.com/demos/free-admin-templates/xtreme-admin-lite/html/ltr/">Demo</a></h3>
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -14,7 +14,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
 ## Running unit tests
 

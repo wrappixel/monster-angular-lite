@@ -1,0 +1,60 @@
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Basic Alert</h3>
+                <h6 class="card-subtitle">This is basic alert</h6>
+                <ngb-alert [dismissible]="false">
+                    <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                  </ngb-alert>
+  					
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Closeable Alert</h3>
+                <h6 class="card-subtitle">This is closeable alert</h6>
+                <p *ngFor="let alert of alerts">
+                  <ngb-alert [type]="alert.type" (close)="closeAlert(alert)">{{ alert.message }}</ngb-alert>
+                </p>
+                <p>
+                  <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+                </p>
+  					
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Self Closing  Alert</h3>
+                <h6 class="card-subtitle">Static self-closing alert that disappears after 20 seconds (refresh the page if it has already disappeared)</h6>
+                <ngb-alert *ngIf="!staticAlertClosed" (close)="staticAlertClosed = true">Check out our awesome new features!</ngb-alert>
+  				<p>Show a self-closing success message that disappears after 5 seconds.</p>
+  				<ngb-alert *ngIf="successMessage" type="success" (close)="successMessage = null">{{ successMessage }}</ngb-alert>	
+  				<p>
+				  <button class="btn btn-primary" (click)="changeSuccessMessage()">Change message</button>
+				</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Custom Alert</h3>
+                <p>
+                  <ngb-alert type="custom" [dismissible]="false"><strong>Whoa!</strong> This is a custom alert.</ngb-alert>
+                </p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h3 class="card-title">Global Configuration of Alert</h3>
+                <p>
+                  <ngb-alert>
+                    This alert's type is success and it's not dismissible because the config has been customized
+                  </ngb-alert>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

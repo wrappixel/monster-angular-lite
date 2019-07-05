@@ -1,0 +1,23 @@
+/*******************
+ Breadcrumb and page title
+*******************/
+
+.page-breadcrumb {
+    padding: 20px 30px 0 30px;  
+	margin-top: 15px;
+    .page-title{
+        margin-bottom: 20px;
+    }
+    .breadcrumb {
+        padding: 0px;
+        margin: 0px;
+        background: transparent;
+        font-size: 12px;
+        .breadcrumb-item+.breadcrumb-item::before {
+            content: "\e649";
+            font-family: themify;
+            color: $gray-400;
+            font-size: 11px;
+        }
+    }
+}
