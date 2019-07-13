@@ -1,4 +1,4 @@
-# xtreme-admin-angular-lite
+# monster-admin-angular-lite
 <a href="https://wrappixel.com/templates/xtreme-angular-6-admin/"><img src="https://wrappixel.com/wp-content/uploads/edd/2018/07/xtreme-angular-wp-new-pr1.jpg" /></a><br/>
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.3.
 
