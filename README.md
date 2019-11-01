@@ -1,9 +1,14 @@
 # monster-admin-angular-lite
-<a href="https://www.wrappixel.com/templates/monster-angular-dashboard/">Check pro version</a><br/>
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.
 
-<h4>Check this Repo Live Demo</h4>
-<h3><a href=https://www.wrappixel.com/demos/angular-admin-templates/monster-angular-lite/index.html">Demo</a></h3>
+<h4><a href="https://wrappixel.com/demos/angular-admin-templates/monster-angular-lite/angular/starter">Free Version Demo Link</a></h4>
+
+## Pro Version
+
+<a href="https://www.wrappixel.com/templates/monster-angular-dashboard/"><img src="https://www.wrappixel.com/wp-content/uploads/2019/01/monster-admin-angular-nw-1.jpg"/></a><br/>
+
+<h4><a href="https://www.wrappixel.com/demos/angular-admin-templates/monster-angular/main/dashboard/dashboard1">Demo</a></h4>
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
