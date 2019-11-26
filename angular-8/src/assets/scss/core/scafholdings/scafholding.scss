@@ -45,46 +45,6 @@ a.link {
     }
 }
 
-
-
-/*******************
-Blockquote
-*******************/
-
-html body blockquote {
-    border-left: 5px solid $primary;
-    border: 1px solid $border-color;
-    padding: 15px;
-}
-
-.clear {
-    clear: both;
-}
-
-ol li {
-    margin: 5px 0;
-}
-
-
-/*******************
-Thumb size
-*******************/
-
-.thumb-sm {
-    height: 32px;
-    width: 32px;
-}
-
-.thumb-md {
-    height: 48px;
-    width: 48px;
-}
-
-.thumb-lg {
-    height: 88px;
-    width: 88px;
-}
-
 .hide {
     display: none;
 }
@@ -265,14 +225,6 @@ Labels
     font-size: 9px;
 }
 
-.badge-xs,
-.badge-sm {
-    -webkit-transform: translate(0, -2px);
-    -ms-transform: translate(0, -2px);
-    -o-transform: translate(0, -2px);
-    transform: translate(0, -2px);
-}
-
 
 
 /*******************
@@ -337,98 +289,39 @@ Card
     }
 }
 
-.card-fullscreen {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    overflow: auto;
-}
-
 .oh {
     overflow: hidden;
 }
-.card-hover{
-    -webkit-transition: all .25s ease;
-    -o-transition: all .25s ease;
-    -moz-transition: all .25s ease;
-    transition: all .25s ease;
-    &:hover{
-        webkit-transform: translateY(-4px) scale(1.01);
-        -moz-transform: translateY(-4px) scale(1.01);
-        -ms-transform: translateY(-4px) scale(1.01);
-        -o-transform: translateY(-4px) scale(1.01);
-        transform: translateY(-4px) scale(1.01);
-        -webkit-box-shadow: 0 14px 24px rgba(62,57,107,.1);
-        box-shadow: 0 14px 24px rgba(62,57,107,.1);
+
+.button-box .btn {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+.stylish-table {
+    thead th {
+        font-weight: 400;
+        color: $text-muted;
+        border: 0px;
+        border-bottom: 1px;
     }
-}
-.draggable-cards .card-header{
-    cursor: move;
-}
-.card-moved .card{
-    background: $info;
-    color:$white;
-}
-/*******************
-Labels
-*******************/
-
-.label {
-    padding: 3px 10px;
-    line-height: 13px;
-    color: $white;
-    font-weight: 400;
-    border-radius: $border-radius;
-    font-size: 75%;
-}
-
-.label-rounded {
-    border-radius: 60px;
-}
-
-.label-custom {
-    background-color: $cyan;
-}
-
-.label-success {
-    background-color: $success;
-}
-
-.label-info {
-    background-color: $blue;
-}
-
-.label-warning {
-    background-color: $warning;
-}
-
-.label-danger {
-    background-color: $danger;
-}
-
-.label-megna {
-    background-color: $cyan;
-}
-
-.label-primary {
-    background-color: $primary;
-}
-
-.label-purple {
-    background-color: $purple;
-}
-
-.label-red {
-    background-color: $red;
-}
-
-.label-inverse {
-    background-color: $gray-800;
-}
-
-.label-default {
-    background-color: $gray-100;
+    tbody tr {
+        border-left: 4px solid $white;
+        &:hover,
+        &.active {
+            border-left: 4px solid $info;
+        }
+    }
+    tbody td {
+        vertical-align: middle;
+        h6 {
+            font-weight: 500;
+            margin-bottom: 0px;
+            white-space: nowrap;
+        }
+        small {
+            line-height: 12px;
+            white-space: nowrap;
+        }
+    }
 }

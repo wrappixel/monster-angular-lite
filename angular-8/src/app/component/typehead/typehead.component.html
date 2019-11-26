@@ -2,7 +2,7 @@
   <div class="col-md-6">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Simple Typeahead</h3>
+        <h4 class="card-title">Simple Typeahead</h4>
         <h6 class="card-subtitle">A typeahead example that gets values from a static string</h6>
         <label for="typeahead-basic">Search for a USA state:</label>
         <input id="typeahead-basic" type="text" class="form-control" [(ngModel)]="model1" [ngbTypeahead]="search1" />
@@ -13,7 +13,7 @@
   <div class="col-md-6">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Formatted results</h3>
+        <h4 class="card-title">Formatted results</h4>
         <h6 class="card-subtitle">A typeahead example that uses a formatter function for string results</h6>
         <label for="typeahead-format">Search for a state:</label>
         <input
@@ -21,7 +21,7 @@
           type="text"
           class="form-control"
           [(ngModel)]="model3"
-          [ngbTypeahead]="search3"
+          [ngbTypeahead]="search4"
           [resultFormatter]="formatter"
         />
         <hr />
@@ -33,7 +33,7 @@
   <div class="col-md-6">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Template for results</h3>
+        <h4 class="card-title">Template for results</h4>
         <h6 class="card-subtitle">A typeahead example that uses custom template for results display and uses object as a model</h6>
         <ng-template #rt let-r="result" let-t="term">
           <img [src]="'https://upload.wikimedia.org/wikipedia/commons/thumb/' + r.flag" width="16" /> {{ r.name }}
@@ -57,7 +57,7 @@
   <div class="col-md-6">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Open on Focus</h3>
+        <h4 class="card-title">Open on Focus</h4>
         <h6 class="card-subtitle">It is possible to get the focus events with the current input value</h6>
         <label for="typeahead-focus">Search for a state:</label>
         <input
@@ -78,7 +78,7 @@
   <div class="col-md-6">
     <div class="card">
       <div class="card-body">
-        <h3 class="card-title">Wikipedia search</h3>
+        <h4 class="card-title">Wikipedia search</h4>
         <h6 class="card-subtitle">It is possible to get the focus events with the current input value</h6>
         <div class="form-group">
           <label for="typeahead-http">Search for a wiki page:</label>

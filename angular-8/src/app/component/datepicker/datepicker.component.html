@@ -2,7 +2,7 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Datepicker Basic</h3>
+                <h4 class="card-title">Datepicker Basic</h4>
                 <h6 class="card-subtitle">This is basic datepicker</h6>
                 <p>Simple datepicker</p>
                 <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next"></ngb-datepicker>
@@ -23,7 +23,7 @@
 
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Disabled datepicker</h3>
+                <h4 class="card-title">Disabled datepicker</h4>
                 <h6 class="card-subtitle">This is Disabled datepicker</h6>
                 <ngb-datepicker [(ngModel)]="model3" [disabled]="disabled"></ngb-datepicker>
 
@@ -36,7 +36,7 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Datepicker Multiple months</h3>
+                <h4 class="card-title">Datepicker Multiple months</h4>
                 <h6 class="card-subtitle">This is datepicker Multiple months</h6>
                 <ngb-datepicker [displayMonths]="displayMonths" [navigation]="navigation"></ngb-datepicker>
                 <hr />
@@ -70,7 +70,7 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Datepicker in a popup</h3>
+                <h4 class="card-title">Datepicker in a popup</h4>
                 <h6 class="card-subtitle">This is datepicker with popup</h6>
                 <form class="form-inline">
                     <div class="form-group">
@@ -94,7 +94,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Range Datepicker</h3>
+                <h4 class="card-title">Range Datepicker</h4>
                 <h6 class="card-subtitle">Example of the range selection</h6>
                 <ngb-datepicker #dp ngModel (ngModelChange)="onDateChange($event)" [displayMonths]="2" [dayTemplate]="t">
                 </ngb-datepicker>
@@ -118,7 +118,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Custom date adapter</h3>
+                <h4 class="card-title">Custom date adapter</h4>
                 <h6 class="card-subtitle">
                     These datepickers use custom Date adapter that lets you use your own model implementation. In this
                     example we are converting from and to a JS native Date object</h6>
@@ -164,7 +164,7 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Custom day view</h3>
+                <h4 class="card-title">Custom day view</h4>
                 <p>This datepicker uses a custom template to display days. All week-ends are displayed with an orange
                     background.</p>
 
@@ -194,7 +194,7 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Footer template</h3>
+                <h4 class="card-title">Footer template</h4>
                 <p>This datepicker uses a footer template which is presented inside datepicker. Today and close buttons
                     used as an example.</p>
 

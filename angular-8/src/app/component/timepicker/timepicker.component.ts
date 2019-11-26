@@ -7,19 +7,19 @@ export class NgbTimeStringAdapter extends NgbTimeAdapter<string> {
 
   fromModel(value: string): NgbTimeStruct {
     if (!value) {
-      return null;
+	return null;
     }
     const split = value.split(':');
     return {
-      hour: parseInt(split[0], 10),
-      minute: parseInt(split[1], 10),
-      second: parseInt(split[2], 10)
+	hour: parseInt(split[0], 10),
+	minute: parseInt(split[1], 10),
+	second: parseInt(split[2], 10)
     };
   }
 
   toModel(time1: NgbTimeStruct): string {
     if (!time1) {
-      return null;
+	return null;
     }
     return `${this.pad(time1.hour)}:${this.pad(time1.minute)}:${this.pad(time1.second)}`;
   }
@@ -59,14 +59,14 @@ export class NgbdtimepickerBasicComponent {
     const value = control.value;
 
     if (!value) {
-      return null;
+	return null;
     }
 
     if (value.hour < 12) {
-      return { tooEarly: true };
+	return { tooEarly: true };
     }
     if (value.hour > 13) {
-      return { tooLate: true };
+	return { tooLate: true };
     }
 
     return null;

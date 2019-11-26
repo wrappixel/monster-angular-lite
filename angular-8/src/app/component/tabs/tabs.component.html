@@ -2,7 +2,7 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Default Tabset</h3>
+                <h4 class="card-title">Default Tabset</h4>
                 <h6 class="card-subtitle">This is basic Default pagination</h6>
                 <ngb-tabset>
                   <ngb-tab title="Simple">
@@ -39,7 +39,7 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Pills</h3>
+                <h4 class="card-title">Pills</h4>
                 <h6 class="card-subtitle">This is Pills demo</h6>
                 <ngb-tabset type="pills">
                   <ngb-tab title="Simple">
@@ -76,7 +76,7 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Select an active tab by id</h3>
+                <h4 class="card-title">Select an active tab by id</h4>
                 <h6 class="card-subtitle">This is Pagination size</h6>
                 <ngb-tabset #t="ngbTabset">
                   <ngb-tab id="tab-selectbyid1" title="Simple">
@@ -109,7 +109,7 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Prevent tab change</h3>
+                <h4 class="card-title">Prevent tab change</h4>
                 <h6 class="card-subtitle">This is Prevent tab change</h6>
                 <ngb-tabset  (tabChange)="beforeChange($event)">
                   <ngb-tab id="tab-preventchange1" title="Simple">
@@ -145,7 +145,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Nav Justification</h3>
+                <h4 class="card-title">Nav Justification</h4>
                 <h6 class="card-subtitle">This is Prevent tab change</h6>
                 <ngb-tabset [justify]="currentJustify">
                   <ngb-tab title="Simple">
@@ -197,7 +197,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-                <h3 class="card-title">Nav Orientation</h3>
+                <h4 class="card-title">Nav Orientation</h4>
                 <ngb-tabset type="pills" [orientation]="currentOrientation">
                   <ngb-tab title="Simple">
                     <ng-template ngbTabContent>

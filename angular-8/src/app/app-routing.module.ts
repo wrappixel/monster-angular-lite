@@ -8,10 +8,10 @@ export const Approutes: Routes = [
     path: '',
     component: FullComponent,
     children: [
-      { path: '', redirectTo: '/starter', pathMatch: 'full' },
+      { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
       {
-        path: 'starter',
-        loadChildren: './starter/starter.module#StarterModule'
+        path: 'dashboard',
+        loadChildren: './dashboard/dashboard.module#DashboardModule'
       },
       {
         path: 'component',
@@ -21,6 +21,6 @@ export const Approutes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '/starter'
+    redirectTo: '/dashboard'
   }
 ];

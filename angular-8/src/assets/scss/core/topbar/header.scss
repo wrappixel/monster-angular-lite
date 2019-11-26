@@ -78,37 +78,6 @@
     }
 }
 
-
-.search-box {
-    .app-search {
-        z-index: 110;
-        width: 100%;
-        top: -1px;
-        box-shadow: $shadow;
-        display: none;
-        left: 0px;
-        &.show-search {
-            display: block;
-        }
-        .form-control {
-            padding: 23px 40px 20px 23px;
-            @extend %square;
-            transition: $transitions;
-            &:focus {
-                border-color: transparent;
-            }
-        }
-        .srh-btn {
-            position: absolute;
-            top: 23px;
-            cursor: pointer;
-            right: 20px;
-        }
-    }
-}
-
-
-
 /*******************
 Designed dropdown
 ******************/
@@ -117,15 +86,6 @@ Designed dropdown
         padding-top: 0px;
         border: 0px;
         box-shadow:1px 1px 15px rgba(0, 0, 0, 0.1);
-        &.dropdown-menu-right {
-            .with-arrow{
-                right: 0px;
-                >span {
-                    right: 20px;
-                    left:auto;
-                }
-            }
-        }
     }
 }
 /*******************
