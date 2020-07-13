@@ -18,7 +18,6 @@ import { NgbdPopTooltipComponent } from './popover-tooltip/popover-tooltip.compo
 import { NgbdratingBasicComponent } from './rating/rating.component';
 import { NgbdtabsBasicComponent } from './tabs/tabs.component';
 import { NgbdtimepickerBasicComponent } from './timepicker/timepicker.component';
-import { NgbdtypeheadBasicComponent } from './typehead/typehead.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { CardsComponent } from './card/card.component';
 import { ToastComponent } from './toast/toast.component';
@@ -45,7 +44,6 @@ import { ToastsContainer } from './toast/toast-container';
     NgbdratingBasicComponent,
     NgbdtabsBasicComponent,
     NgbdtimepickerBasicComponent,
-    NgbdtypeheadBasicComponent,
     ButtonsComponent,
     CardsComponent,
     ToastComponent,

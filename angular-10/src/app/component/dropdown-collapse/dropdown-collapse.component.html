@@ -1,0 +1,277 @@
+<div class="row">
+	<div class="col-md-6">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title">Dropdown</h4>
+				<h6 class="card-subtitle">This is basic Dropdown</h6>
+				<div class="row">
+					<div class="col">
+						<div ngbDropdown class="d-inline-block">
+							<button
+								class="btn btn-outline-primary"
+								id="dropdownBasic1"
+								ngbDropdownToggle
+							>
+								Toggle dropdown
+							</button>
+							<div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+								<button class="dropdown-item">Action - 1</button>
+								<button class="dropdown-item">Another Action</button>
+								<button class="dropdown-item">Something else is here</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col text-right">
+						<div ngbDropdown placement="top-right" class="d-inline-block">
+							<button
+								class="btn btn-outline-primary"
+								id="dropdownBasic2"
+								ngbDropdownToggle
+							>
+								Toggle dropup
+							</button>
+							<div ngbDropdownMenu aria-labelledby="dropdownBasic2">
+								<button class="dropdown-item">Action - 1</button>
+								<button class="dropdown-item">Another Action</button>
+								<button class="dropdown-item">Something else is here</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-6">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title">Manual triggers</h4>
+				<h6 class="card-subtitle">
+					You can easily control dropdowns programmatically using the exported
+					dropdown instance.
+				</h6>
+				<div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+					<button
+						class="btn btn-outline-primary"
+						id="dropdownManual"
+						ngbDropdownToggle
+					>
+						Toggle dropdown
+					</button>
+					<div ngbDropdownMenu aria-labelledby="dropdownManual">
+						<button class="dropdown-item">Action - 1</button>
+						<button class="dropdown-item">Another Action</button>
+						<button class="dropdown-item">Something else is here</button>
+					</div>
+					<button
+						class="btn btn-outline-success btn-sm"
+						(click)="$event.stopPropagation(); myDrop.open()"
+					>
+						Open from outside
+					</button>
+					<button
+						class="btn btn-outline-danger btn-sm"
+						(click)="$event.stopPropagation(); myDrop.close()"
+					>
+						Close from outside
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title">Collapse</h4>
+				<h6 class="card-subtitle">
+					The NgbCollapse directive provides a simple way to hide and show an
+					element with animations.
+				</h6>
+				<p>
+					<button
+						type="button"
+						class="btn btn-outline-primary"
+						(click)="isCollapsed = !isCollapsed"
+						[attr.aria-expanded]="!isCollapsed"
+						aria-controls="collapseExample"
+					>
+						Toggle
+					</button>
+				</p>
+				<blockquote id="collapseExample" [ngbCollapse]="isCollapsed">
+					You can collapse this card by clicking Toggle
+				</blockquote>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title">Button groups and split buttons</h4>
+				<h6 class="card-subtitle">
+					ThBootstrap split buttons and dropdowns on button groups are supported
+					with the existing dropdown directives.
+				</h6>
+
+				<div class="btn-group mr-3">
+					<button type="button" class="btn btn-outline-success mr-0">
+						Plain ol' button
+					</button>
+					<div
+						class="btn-group"
+						ngbDropdown
+						role="group"
+						aria-label="Button group with nested dropdown"
+					>
+						<button class="btn btn-outline-primary" ngbDropdownToggle>
+							Drop me
+						</button>
+						<div class="dropdown-menu" ngbDropdownMenu>
+							<button class="dropdown-item">One</button>
+							<button class="dropdown-item">Two</button>
+							<button class="dropdown-item">Four!</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn-group mr-3">
+					<button type="button" class="btn btn-primary mr-0">Split me</button>
+					<div
+						class="btn-group"
+						ngbDropdown
+						role="group"
+						aria-label="Button group with nested dropdown"
+					>
+						<button
+							class="btn btn-primary dropdown-toggle-split"
+							ngbDropdownToggle
+						></button>
+						<div class="dropdown-menu" ngbDropdownMenu>
+							<button class="dropdown-item">One</button>
+							<button class="dropdown-item">Two</button>
+							<button class="dropdown-item">Four!</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="btn-group mr-3">
+					<div
+						class="btn-group"
+						ngbDropdown
+						role="group"
+						aria-label="Button group with nested dropdown"
+					>
+						<button class="btn btn-outline-danger mr-0" ngbDropdownToggle>
+							Select me
+						</button>
+						<div class="dropdown-menu" ngbDropdownMenu>
+							<button class="dropdown-item">One</button>
+							<button class="dropdown-item">Two</button>
+							<button class="dropdown-item">Four!</button>
+						</div>
+					</div>
+					<div
+						class="btn-group"
+						ngbDropdown
+						role="group"
+						aria-label="Button group with nested dropdown"
+					>
+						<button class="btn btn-outline-success" ngbDropdownToggle>
+							Or me
+						</button>
+						<div class="dropdown-menu" ngbDropdownMenu>
+							<button class="dropdown-item">One</button>
+							<button class="dropdown-item">Two</button>
+							<button class="dropdown-item">Four!</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title">Mixed menu items and form <span class="badge badge-success text-white">New</span></h4>
+				<div ngbDropdown class="d-inline-block">
+				      <button class="btn btn-outline-primary" id="dropdownForm1" ngbDropdownToggle>Toggle dropdown</button>
+				      <div ngbDropdownMenu aria-labelledby="dropdownForm1">
+				       	<form class="px-4 py-3">
+					          	<div class="form-group">
+						            <label for="exampleDropdownFormEmail1">Email address</label>
+						            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+					          	</div>
+					          	<div class="form-group">
+						            <label for="exampleDropdownFormPassword1">Password</label>
+						            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+					          	</div>
+					          	<div class="form-check">
+						            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+						            <label class="form-check-label" for="dropdownCheck">
+						              Remember me
+						            </label>
+				          		</div>
+				          		<button type="submit" class="btn btn-primary">Sign in</button>
+				        	</form>
+				        	<div class="dropdown-divider"></div>
+				        	<button ngbDropdownItem>New around here? Sign up</button>
+				        	<button ngbDropdownItem>Forgot password?</button>
+				      </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<div class="card">
+			<div class="card-body">
+				<h4 class="card-title">Dynamic positioning in a navbar <span class="badge badge-success text-white">New</span></h4>
+				<nav class="navbar navbar-expand-md navbar-light bg-light">
+					<span class="navbar-brand">Dropdowns in navbar</span>
+					<button class="navbar-toggler" type="button" aria-controls="navbarContent" [attr.aria-expanded]="!collapsed" aria-label="Toggle navigation" (click)="collapsed = !collapsed">
+					    <span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="navbar-collapse" [class.collapse]="collapsed" id="navbarContent">
+					    	<ul class="navbar-nav ml-auto">
+					      	<li class="nav-item" ngbDropdown>
+					        		<a class="nav-link" style="cursor: pointer" ngbDropdownToggle id="navbarDropdown1" role="button">
+					          			Static
+					        		</a>
+					        		<div ngbDropdownMenu aria-labelledby="navbarDropdown1" class="dropdown-menu">
+							          	<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
+							          	<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
+							          	<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+					        		</div>
+					      	</li>
+
+					      	<li class="nav-item" ngbDropdown>
+							      <a class="nav-link" style="cursor: pointer" ngbDropdownToggle id="navbarDropdown2" role="button">
+							          Static right
+							      </a>
+					        		<div ngbDropdownMenu aria-labelledby="navbarDropdown2" class="dropdown-menu dropdown-menu-right">
+							          	<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
+							          	<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
+							          	<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+					        		</div>
+					     		</li>
+
+					      	<li class="nav-item" ngbDropdown display="dynamic" placement="bottom-right">
+							      <a class="nav-link" style="cursor: pointer" ngbDropdownToggle id="navbarDropdown3" role="button">
+							          Dynamic
+							      </a>
+					        		<div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu">
+							          	<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Action</a>
+							          	<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Another action</a>
+							          	<a ngbDropdownItem href="#" (click)="$event.preventDefault()">Something else here</a>
+					        		</div>
+					      	</li>
+					    	</ul>
+					  </div>
+				</nav>
+			</div>
+		</div>
+	</div>
+</div>

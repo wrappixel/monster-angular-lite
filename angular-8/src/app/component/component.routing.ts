@@ -12,7 +12,6 @@ import { NgbdPopTooltipComponent } from './popover-tooltip/popover-tooltip.compo
 import { NgbdratingBasicComponent } from './rating/rating.component';
 import { NgbdtabsBasicComponent } from './tabs/tabs.component';
 import { NgbdtimepickerBasicComponent } from './timepicker/timepicker.component';
-import { NgbdtypeheadBasicComponent } from './typehead/typehead.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { CardsComponent } from './card/card.component';
 import { ToastComponent } from './toast/toast.component';
@@ -174,18 +173,6 @@ export const ComponentsRoutes: Routes = [
 						{ title: 'Dashboard', url: '/dashboard' },
 						{ title: 'ngComponent' },
 						{ title: 'Timepicker' }
-					]
-				}
-			},
-			{
-				path: 'typehead',
-				component: NgbdtypeheadBasicComponent,
-				data: {
-					title: 'Typehead',
-					urls: [
-						{ title: 'Dashboard', url: '/dashboard' },
-						{ title: 'ngComponent' },
-						{ title: 'Typehead' }
 					]
 				}
 			},
