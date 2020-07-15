@@ -11,7 +11,7 @@ export class NgbdpaginationBasicComponent {
 	currentPage = 3;
 	disablepage = 3;
 	isDisabled = true;
-	pagecustom: 4;
+	pagecustom=4;
 	toggleDisabled() {
 		this.isDisabled = !this.isDisabled;
 	}

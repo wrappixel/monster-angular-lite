@@ -49,7 +49,7 @@ export class NgbdAlertBasicComponent implements OnInit {
   private _success = new Subject<string>();
 
   staticAlertClosed = false;
-  successMessage: string;
+  successMessage: string='';
 
   public closeAlert(alert: IAlert) {
     const index: number = this.alerts.indexOf(alert);
@@ -64,7 +64,7 @@ export class NgbdAlertBasicComponent implements OnInit {
     setTimeout(() => (this.staticAlertClosed = true), 20000);
 
     this._success.subscribe(message => (this.successMessage = message));
-    this._success.pipe(debounceTime(5000)).subscribe(() => (this.successMessage = null));
+    this._success.pipe(debounceTime(5000)).subscribe(() => (this.successMessage = ''));
   }
 
   public changeSuccessMessage() {

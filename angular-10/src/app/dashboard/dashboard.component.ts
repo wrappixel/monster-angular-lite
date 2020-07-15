@@ -14,22 +14,22 @@ export class DashboardComponent implements AfterViewInit {
   }
 
   // lineChart
-  public lineChartData: Array<any> = [
+  public lineChartData: Array<object> = [
     { data: [8,13,1,13,1], label: 'Product A' },
     { data: [14,1,14,1,14], label: 'Product B' }
   ];
-  public lineChartLabels: Array<any> = [
+  public lineChartLabels: Array<string> = [
     '1',
     '2',
     '3',
     '4',
     '5',
   ];
-  public lineChartOptions: any = {
+  public lineChartOptions={
     responsive: true,
     maintainAspectRatio: false
   };
-  public lineChartColors: Array<any> = [
+  public lineChartColors= [
     {
       // grey
       backgroundColor: 'rgba(0,158,251,0.1)',

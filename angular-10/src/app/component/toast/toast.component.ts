@@ -27,7 +27,7 @@ export class ToastComponent {
 	    this.toastService.show('I am a success toast', { classname: 'bg-success text-light', delay: 10000 });
 	}
 
-	  showDanger(dangerTpl) {
+	  showDanger(dangerTpl:string) {
 	    this.toastService.show(dangerTpl, { classname: 'bg-danger text-light', delay: 15000 });
 	}
 }

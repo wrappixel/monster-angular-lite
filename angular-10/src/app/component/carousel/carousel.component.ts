@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NgbCarouselConfig, NgbCarousel, NgbSlideEvent, NgbSlideEventSource } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
+import { AssertNotNull } from '@angular/compiler';
 
 @Component({
 	selector: 'app-ngbd-buttons-radio',
@@ -26,7 +27,7 @@ export class NgbdCarouselBasicComponent {
 	  pauseOnIndicator = false;
 	  pauseOnHover = true;
 
-	  @ViewChild('carousel', {static : true}) carousel: NgbCarousel;
+	  @ViewChild('carousel', {static : true}) carousel: NgbCarousel=Object.create(null);
 
 	  togglePaused() {
 	    if (this.paused) {

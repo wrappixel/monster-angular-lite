@@ -67,18 +67,18 @@ const after = (one: NgbDateStruct, two: NgbDateStruct) =>
   ]
 })
 export class NgbdDatepickerBasicComponent {
-  model: NgbDateStruct;
-  model4: NgbDateStruct;
+  model: NgbDateStruct=Object.create(null);
+  model4: NgbDateStruct=Object.create(null);
 
-  model2;
-  date: { year: number; month: number };
+  model2: NgbDateStruct=Object.create(null);
+  date: { year: number; month: number }={year:-1,month:-1};
 
   // Custom date adapter
-  model1: Date;
-  model11: Date;
+  model1: Date=new Date();
+  model11: Date=new Date();
 
   // footer
-  model5: NgbDateStruct;
+  model5: NgbDateStruct=Object.create(null);
   today5 = this.calendar5.getToday();
 
   get today() {
@@ -95,10 +95,10 @@ export class NgbdDatepickerBasicComponent {
   disabled = true;
 
   // This is for the range date picker
-  hoveredDate: NgbDateStruct;
+  hoveredDate: NgbDateStruct=Object.create(null);
 
-  fromDate: NgbDateStruct;
-  toDate: NgbDateStruct;
+  fromDate: NgbDateStruct=Object.create(null);
+  toDate: NgbDateStruct=Object.create(null);
 
   selectToday() {
     this.model = { year: my.getFullYear(), month: my.getMonth() + 1, day: my.getDate() };
@@ -115,15 +115,15 @@ export class NgbdDatepickerBasicComponent {
     } else if (this.fromDate && !this.toDate && after(date, this.fromDate)) {
       this.toDate = date;
     } else {
-      this.toDate = null;
+      this.toDate = Object.create(null);
       this.fromDate = date;
     }
   }
 
-  isHovered = date => this.fromDate && !this.toDate && this.hoveredDate && after(date, this.fromDate) && before(date, this.hoveredDate);
-  isInside = date => after(date, this.fromDate) && before(date, this.toDate);
-  isFrom = date => equals(date, this.fromDate);
-  isTo = date => equals(date, this.toDate);
+  isHovered = (date: NgbDate) => this.fromDate && !this.toDate && this.hoveredDate && after(date, this.fromDate) && before(date, this.hoveredDate);
+  isInside = (date: NgbDate) => after(date, this.fromDate) && before(date, this.toDate);
+  isFrom = (date: NgbDate) => equals(date, this.fromDate);
+  isTo = (date: NgbDate) => equals(date, this.toDate);
   isDisabled = (date: NgbDate, current: { month: number }) => date.month !== current.month;
   isWeekend = (date: NgbDate) => this.calendar1.getWeekday(date) >= 6;
 }

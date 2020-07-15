@@ -140,7 +140,7 @@ export class WikipediaService {
       return of([]);
     }
 
-    return this.http.get(WIKI_URL, { params: PARAMS.set('search', term) }).pipe(map(response => response[1]));
+    return this.http.get(WIKI_URL, { params: PARAMS.set('search', term) }).pipe(map(response => response));
   }
 }
 
@@ -158,16 +158,16 @@ export class WikipediaService {
   ]
 })
 export class NgbdtypeheadBasicComponent {
-  public model1: any;
-  model2: any;
-  public model3: any;
-  public model5: any;
+  public model1='';
+  model2='';
+  public model3='';
+  public model5='';
 
-  model4: any;
+  model4='';
   searching = false;
   searchFailed = false;
 
-  @ViewChild('instance', { static: true }) instance;
+  @ViewChild('instance', { static: true }) instance:any;
   focus$ = new Subject<string>();
   click$ = new Subject<string>();
   search1 = (text$: Observable<string>) =>
