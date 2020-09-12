@@ -120,12 +120,13 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 <!-- Useful Links of Template -->
 <h2>Useful Links</h2>
 <ul>
-<li><a href="https://www.wrappixel.com" rel="nofollow">Bootstrap Templates</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/react-templates/" rel="nofollow">React Templates</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/vuejs-templates/" rel="nofollow">Vue Templates</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/angular-templates/" rel="nofollow">Angular Templates</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/free-templates/" rel="nofollow">Freebies</a> from Wrappixel</li>
-<li><a href="https://www.wrappixel.com/affiliate-area/" rel="nofollow">Affiliate Program</a></li>
+<li><a href="https://www.wrappixel.com/templates/category/admin-template/">Free Dashboard Templates</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/">Free Bootstrap Templates</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/bootstrap-admin-templates/">Bootstrap 4 Admin Template</a> Free from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/angular-templates/">Free Angular Templates</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/react-templates/">React Dashboard Template</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/vuejs-templates/">Vuetify Template</a> from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/free-templates/">Free Website Themes</a> from WrapPixel</li>
 </ul>
 
 <!-- Social Media of Wrappixel -->
