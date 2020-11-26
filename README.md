@@ -1,8 +1,8 @@
-<!-- # monster-admin-angular-lite 7,8,9 and 10 -->
+<!-- # monster-admin-angular-lite 7,8,9, 10 and 11 -->
 
 <!-- Heading of Template -->
 <h1>
-  <a href="https://wrappixel.com/demos/angular-admin-templates/monster-angular-lite/angular/dashboard">Monster Angular 10 Admin Lite</a>
+  <a href="https://wrappixel.com/demos/angular-admin-templates/monster-angular-lite/angular/dashboard">Monster Angular 11 Admin Lite</a>
 </h1>
 
 <!-- Main image of Template -->
@@ -12,10 +12,10 @@
 
 <!-- Description of Template -->
 <p>
- Monster Angular 9 Lite is a power player with clean design, intuitive layouts and mesmerizing colors that entertain your eyes. This free angular admin dashboard template is a simple, sober and an amazing theme of 2020 that offers fully responsive pages along with easy customization options to give an appealing look to your dashboard.
+ Monster Angular 11 Lite is a power player with clean design, intuitive layouts and mesmerizing colors that entertain your eyes. This free angular admin dashboard template is a simple, sober and an amazing theme of 2020 that offers fully responsive pages along with easy customization options to give an appealing look to your dashboard.
 </p>
 <p>
-    It is based on Angular 9 framework, SaSSBase CSS and offers bundle of essential components, features as well as integration plugins. Got a commercial project to be completed? You can check out the pro version of this <a href="https://www.wrappixel.com/templates/category/angular-templates/">angular  admin template</a>.
+    It is based on Angular 11 framework, SaSSBase CSS and offers bundle of essential components, features as well as integration plugins. Got a commercial project to be completed? You can check out the pro version of this <a href="https://www.wrappixel.com/templates/category/angular-templates/">angular  admin template</a>.
 </p>
 
 <!-- <h4><a href="https://wrappixel.com/demos/angular-admin-templates/monster-angular-lite/angular/starter">Free Version Demo Link</a></h4> -->
