@@ -1,0 +1,246 @@
+// Sidebar
+$sidebar-link-padding: 14px 35px 14px 8px;
+$cap-link-padding: 14px 14px 14px 20px;
+$sidebar-icon-size:21px;
+
+/*******************
+Main sidebar
+******************/
+
+.left-sidebar {
+    position: fixed;
+    width: $sidebar-width-full;
+    height: 100%;
+    top: 0px;
+    z-index: 10;
+    padding-top: 64px;
+    background: $sidebar;
+    box-shadow: $shadow;
+    transition: 0.2s ease-in;
+}
+
+/*******************
+sidebar navigation
+******************/
+.scroll-sidebar {
+    height: calc(100% - 20px);
+    position: relative;
+	padding-bottom: 50px;
+}
+
+.user-profile {
+    text-align: center;
+    position: relative;
+    .profile-img {
+        width: 50px;
+        margin: 0 auto;
+        border-radius: 100%;
+		margin-top: 25px;
+        &::before {
+            -webkit-animation: 2.5s blow 0s linear infinite;
+            animation: 2.5s blow 0s linear infinite;
+            position: absolute;
+            content: '';
+            width: 50px;
+            height: 50px;
+            top: 40px;
+            margin: 0 auto;
+            border-radius: 50%;
+            z-index: 0;
+        }
+        @-webkit-keyframes blow {
+            0% {
+                box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+                opacity: 1;
+                -webkit-transform: scale3d(1, 1, 0.5);
+                transform: scale3d(1, 1, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+                opacity: 1;
+                -webkit-transform: scale3d(1, 1, 0.5);
+                transform: scale3d(1, 1, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.1);
+                opacity: 0;
+                -webkit-transform: scale3d(1, 1, 0.5);
+                transform: scale3d(1, 1, 0.5);
+            }
+        }
+        @keyframes blow {
+            0% {
+                box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.1);
+                opacity: 1;
+                -webkit-transform: scale3d(1, 1, 0.5);
+                transform: scale3d(1, 1, 0.5);
+            }
+            50% {
+                box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.1);
+                opacity: 1;
+                -webkit-transform: scale3d(1, 1, 0.5);
+                transform: scale3d(1, 1, 0.5);
+            }
+            100% {
+                box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.1);
+                opacity: 0;
+                -webkit-transform: scale3d(1, 1, 0.5);
+                transform: scale3d(1, 1, 0.5);
+            }
+        }
+        img {
+            width: 100%;
+            border-radius: 100%;
+        }
+    }
+    .profile-text {
+        padding: 5px 0;
+        position: relative;
+        a {
+            color: $body-color;
+        }
+    }
+    .dropdown-menu {
+        left: 0px;
+        right: 0px;
+        width: 180px;
+        margin: 0 auto;
+    }
+}
+
+
+.sidebar-nav {
+    ul {
+		.nav-devider {
+		    height: 1px;
+		    background: rgba(120, 130, 140, 0.13);
+		    display: block;
+		    margin: 20px 0;
+		}
+       .sidebar-item {
+           width: $sidebar-width-full;
+           .sidebar-link {
+                color: $sidebar-text;
+                padding:$sidebar-link-padding;
+                display: flex;
+                white-space: nowrap; 
+                align-items: center;
+                line-height: 25px;
+                font-size: 15px;
+				font-weight: 300;
+				border-left: 3px solid transparent;
+                i {
+                    font-style: normal;
+                    width: 30px;
+                    line-height: 25px;
+                    font-size: $sidebar-icon-size;
+                    color: $sidebar-icons;
+                    display: inline-block;
+                    text-align: center;
+                }
+                &.active,
+                &:hover {
+                    color: $info;
+					i {
+						color: $info;
+					}
+                }
+				&.active {
+					font-weight: 400;
+				}
+				&:hover {
+					border-left: 3px solid $info;
+				}
+            }
+           &.active > .sidebar-link{
+               color: $info;
+           }
+           
+        }
+        /*******************
+         Small cap
+         ******************/
+        .nav-small-cap {
+            font-size: 12px;
+            padding:$cap-link-padding;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            line-height: 30px;
+			font-weight: 500;
+            margin-top: 10px;
+            color: $sidebar-cap;
+			i{line-height: 30px; margin:0 5px;}
+        }
+    }
+    >#sidebarnav >.sidebar-item >.sidebar-link:hover{
+        /*background: rgba(0, 0, 0, 0.04);*/
+    }
+}
+/*******************
+ common m-p removed
+******************/
+.sidebar-nav{
+    ul {
+        margin: 0px;
+        padding: 0px;
+        li {
+            list-style: none;
+        }
+    }
+}
+.collapse.in {
+    display: block;
+}
+
+.sidebar-footer {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    transition:0.2s ease-out;
+    width: 240px;
+    background: $sidebar;
+	z-index: 99;
+    border-top: 1px solid $border-color;
+    a {
+        padding: 15px;
+        width: 33.333337%;
+        float: left;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+
+/*.sidebar-nav .active > .has-arrow::after,*/
+
+/*.sidebar-nav li.selected > .has-arrow::after,*/
+.sidebar-nav li.active > .has-arrow::after,
+.sidebar-nav li > .has-arrow.active::after,
+.sidebar-nav .has-arrow[aria-expanded="true"]::after {
+    -webkit-transform: rotate(-135deg) translate(0, -50%);
+    -ms-transform: rotate(-135deg) translate(0, -50%);
+    -o-transform: rotate(-135deg) translate(0, -50%);
+    transform: rotate(-135deg) translate(0, -50%);
+}
+
+
+/*******************
+User Profile
+******************/
+.user-profile{
+    padding: 15px;
+    
+    .user-content, .user-name, .user-email{
+        color:$theme-light;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 768px) {
+	.sidebar-footer {
+		display: none;
+	}
+}

@@ -1,0 +1,59 @@
+<div class="card">
+    <div class="card-body">
+        <div class="d-md-flex align-items-center">
+            <h4 class="card-title mb-0">Projects of the Month</h4>
+            <div class="ml-auto">
+                <select class="custom-select">
+                    <option selected>January</option>
+                    <option value="1">February</option>
+                    <option value="2">March</option>
+                    <option value="3">April</option>
+                </select>
+            </div>
+        </div>
+        <div class="table-responsive m-t-40">
+            <table class="table stylish-table">
+                <thead>
+                    <tr>
+                        <th colspan="2">Assigned</th>
+                        <th>Name</th>
+                        <th>Budget</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let data of tableData'>
+                        <td>
+                            <div class="d-flex align-items-center">
+                                <span class="{{data.spanClass}}">
+                                    <span *ngIf="data.image !== ''">
+                                        <img src="assets/images/users/2.jpg" alt="user" width="50" />
+                                    </span>
+                                    <span *ngIf="data.image === ''">
+                                        {{data.spanLetter}}
+                                    </span>
+                                </span>
+                                <div class="ml-3">
+                                    <h6>{{data.name}}</h6>
+                                    <small class="text-muted">{{data.designation}}</small>
+                                </div>
+
+                            </div>
+
+
+                        </td>
+                        <td>
+
+                        </td>
+                        <td>{{data.project}}</td>
+                        <td>${{data.budget}}K</td>
+                    </tr>
+
+
+
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

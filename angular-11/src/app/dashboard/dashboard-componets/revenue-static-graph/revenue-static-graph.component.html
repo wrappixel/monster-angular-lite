@@ -1,0 +1,23 @@
+<div class="card">
+    <div class="card-body">
+        <div class="d-md-flex align-items-center">
+            <h4 class="card-title">Revenue Statics</h4>
+            <div class="ml-auto">
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-info"></i>Sin(x)</h6>
+                    </li>
+                    <li class="list-inline-item">
+                        <h6 class="text-muted"><i class="fa fa-circle m-r-5 text-success"></i>Cos(x)</h6>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div style="height:300px;" class="m-t-20">
+            <canvas baseChart height="130" [datasets]="lineChartData" [labels]="lineChartLabels"
+                [options]="lineChartOptions" [colors]="lineChartColors" [legend]="lineChartLegend"
+                [chartType]="lineChartType">
+            </canvas>
+        </div>
+    </div>
+</div>
