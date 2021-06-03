@@ -1,0 +1,19 @@
+<nav class="sidebar-nav">
+    <ul id="sidebarnav">
+		<li class="nav-devider"></li>
+        <!-- First level menu -->
+        <li class="sidebar-item" [class.active]="showMenu === sidebarnavItem.title" *ngFor="let sidebarnavItem of sidebarnavItems"
+            [routerLinkActive]="sidebarnavItem.submenu.length != 0 ? '' : 'active'">
+            <div class="nav-small-cap" *ngIf="sidebarnavItem.extralink === true">{{sidebarnavItem.title}}</div>
+            <a class="sidebar-link waves-effect waves-dark" [routerLink]="sidebarnavItem.class === '' ? [sidebarnavItem.path] : null"
+                [ngClass]="[sidebarnavItem.class]" *ngIf="!sidebarnavItem.extralink;" (click)="addExpandClass(sidebarnavItem.title)"
+                [routerLinkActive]="sidebarnavItem.submenu.length != 0 ? '' : 'active'">
+                <i [ngClass]="[sidebarnavItem.icon]"></i>
+                <span class="hide-menu">{{sidebarnavItem.title}}</span>
+            </a>
+        </li>
+        <li class="text-center upgrade-btn mt-4 px-4">
+            <a href="https://www.wrappixel.com/templates/monster-angular-dashboard/" class="btn btn-block btn-success text-white">Upgrade to Pro</a>
+        </li>
+    </ul>
+</nav>

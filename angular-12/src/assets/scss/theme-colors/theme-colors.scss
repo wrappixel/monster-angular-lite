@@ -1,0 +1,22 @@
+// Theme colors
+#main-wrapper{
+    &[data-layout="vertical"]{
+        /*This is for the logo bg*/
+        .topbar .top-navbar .navbar-header{
+            &[data-logobg="skin6"]{
+                background: $skin6;
+            }
+        }
+        .topbar .navbar-collapse, .topbar{
+            &[data-navbarbg="skin1"]{
+                background: $skin1;
+            }
+        }
+        /*This is for the sidebar bg*/
+        .left-sidebar{
+            &[data-sidebarbg="skin6"], &[data-sidebarbg="skin6"] ul{
+                background: $skin6;
+            }
+        }
+    }
+}
