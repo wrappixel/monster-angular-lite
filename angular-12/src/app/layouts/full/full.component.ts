@@ -5,43 +5,42 @@ import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
 declare var $: any;
 
 @Component({
-  selector: 'app-full-layout',
-  templateUrl: './full.component.html',
-  styleUrls: ['./full.component.scss']
+  selector: "app-full-layout",
+  templateUrl: "./full.component.html",
+  styleUrls: ["./full.component.scss"],
 })
 export class FullComponent implements OnInit {
-
-	public config: PerfectScrollbarConfigInterface = {};
+  public config: PerfectScrollbarConfigInterface = {};
 
   constructor(public router: Router) {}
-
-  public innerWidth: number=0;
-  public defaultSidebar='';
+  public isCollapsed = false;
+  public innerWidth: number = 0;
+  public defaultSidebar = "";
   public showMobileMenu = false;
   public expandLogo = false;
-  public sidebartype = 'full';
+  public sidebartype = "full";
 
   Logo() {
     this.expandLogo = !this.expandLogo;
   }
 
   ngOnInit() {
-    if (this.router.url === '/') {
-      this.router.navigate(['/starter']);
+    if (this.router.url === "/") {
+      this.router.navigate(["/starter"]);
     }
     this.defaultSidebar = this.sidebartype;
     this.handleSidebar();
   }
 
-  @HostListener('window:resize', ['$event'])
-  onResize(event:string) {
+  @HostListener("window:resize", ["$event"])
+  onResize(event: string) {
     this.handleSidebar();
   }
 
   handleSidebar() {
     this.innerWidth = window.innerWidth;
     if (this.innerWidth < 1170) {
-      this.sidebartype = 'mini-sidebar';
+      this.sidebartype = "mini-sidebar";
     } else {
       this.sidebartype = this.defaultSidebar;
     }
@@ -49,12 +48,12 @@ export class FullComponent implements OnInit {
 
   toggleSidebarType() {
     switch (this.sidebartype) {
-      case 'full':
-        this.sidebartype = 'mini-sidebar';
+      case "full":
+        this.sidebartype = "mini-sidebar";
         break;
 
-      case 'mini-sidebar':
-        this.sidebartype = 'full';
+      case "mini-sidebar":
+        this.sidebartype = "full";
         break;
 
       default:
