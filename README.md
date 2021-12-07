@@ -2,7 +2,7 @@
 
 <!-- Heading of Template -->
 <h1>
-  <a href="https://wrappixel.com/demos/angular-admin-templates/monster-angular-lite/angular/dashboard">Monster Angular 12 Admin Lite</a>
+  <a href="https://wrappixel.com/demos/angular-admin-templates/monster-angular-lite/angular/dashboard">Monster Angular 13 Admin Lite</a>
 </h1>
 
 <!-- Main image of Template -->
@@ -12,10 +12,10 @@
 
 <!-- Description of Template -->
 <p>
- Monster Angular 12 Lite is a power player with clean design, intuitive layouts and mesmerizing colors that entertain your eyes. This free angular admin dashboard template is a simple, sober and an amazing theme of 2021 that offers fully responsive pages along with easy customization options to give an appealing look to your dashboard.
+ Monster Angular 13 Lite is a power player with clean design, intuitive layouts and mesmerizing colors that entertain your eyes. This free angular admin dashboard template is a simple, sober and an amazing theme of 2021 that offers fully responsive pages along with easy customization options to give an appealing look to your dashboard.
 </p>
 <p>
-    It is based on Angular 12 framework, SaSSBase CSS and offers bundle of essential components, features as well as integration plugins. Got a commercial project to be completed? You can check out the pro version of this <a href="https://www.wrappixel.com/templates/category/angular-templates/">angular  admin template</a>.
+    It is based on Angular 13 framework, SaSSBase CSS and offers bundle of essential components, features as well as integration plugins. Got a commercial project to be completed? You can check out the pro version of this <a href="https://www.wrappixel.com/templates/category/angular-templates/">angular  admin template</a>.
 </p>
 
 <!-- <h4><a href="https://wrappixel.com/demos/angular-admin-templates/monster-angular-lite/angular/starter">Free Version Demo Link</a></h4> -->
@@ -113,7 +113,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
   <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/monster-angular-admin-y.jpg" />
 </a>
 <p>
-   Checkout our premium version of Monster Angular 12 Admin for lots more features and ready to use page templates.<br>
+   Checkout our premium version of Monster Angular 13 Admin for lots more features and ready to use page templates.<br>
    <a href="https://demos.wrappixel.com/premium-admin-templates/angular/monster-angular/main/dashboard/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/monster-angular-dashboard/">Download</a>
 </p>
 
