@@ -1,0 +1,132 @@
+<div class="row">
+  <!-- ==================================-->
+  <!-- =======Basic Pagination  ===== -->
+  <!-- ==================================-->
+  <div class="col-md-12">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Default Pagination</h4>
+      </div>
+      <div class="card-body border-top">
+        <ngb-pagination
+          [collectionSize]="70"
+          [(page)]="page"
+          aria-label="Default pagination"
+        ></ngb-pagination>
+
+        <p>No direction links:</p>
+        <ngb-pagination
+          [collectionSize]="70"
+          [(page)]="page"
+          [directionLinks]="false"
+        ></ngb-pagination>
+
+        <p>With boundary links:</p>
+        <ngb-pagination
+          [collectionSize]="70"
+          [(page)]="page"
+          [boundaryLinks]="true"
+        ></ngb-pagination>
+
+        <div class="bg-light p-3">Current page: {{ page }}</div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- =======Advanced Pagination  ===== -->
+  <!-- ==================================-->
+  <div class="col-md-12">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Advanced Pagination</h4>
+      </div>
+      <div class="card-body border-top">
+        <p>maxSize = 5, rotate = false</p>
+        <ngb-pagination
+          [collectionSize]="120"
+          [(page)]="page2"
+          [maxSize]="5"
+          [boundaryLinks]="true"
+        ></ngb-pagination>
+
+        <p>maxSize = 5, rotate = true</p>
+        <ngb-pagination
+          [collectionSize]="120"
+          [(page)]="page2"
+          [maxSize]="5"
+          [rotate]="true"
+          [boundaryLinks]="true"
+        ></ngb-pagination>
+
+        <p>maxSize = 5, rotate = true, ellipses = false</p>
+        <ngb-pagination
+          [collectionSize]="120"
+          [(page)]="page2"
+          [maxSize]="5"
+          [rotate]="true"
+          [ellipses]="false"
+          [boundaryLinks]="true"
+        ></ngb-pagination>
+
+        <div class="bg-light p-3">Current page: {{ page2 }}</div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- =======size Pagination  ===== -->
+  <!-- ==================================-->
+  <div class="col-md-12">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Pagination Size</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle mb-3">This is Pagination size</h6>
+        <ngb-pagination
+          [collectionSize]="50"
+          [(page)]="currentPage"
+          size="lg"
+        ></ngb-pagination>
+        <ngb-pagination
+          [collectionSize]="50"
+          [(page)]="currentPage"
+        ></ngb-pagination>
+        <ngb-pagination
+          [collectionSize]="50"
+          [(page)]="currentPage"
+          size="sm"
+        ></ngb-pagination>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- =======alignment Pagination  ===== -->
+  <!-- ==================================-->
+  <div class="col-md-12">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Pagination Alignment</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle mb-3">
+          Change the alignment of pagination components with flexbox utilities.
+        </h6>
+        <ngb-pagination
+          class="d-flex justify-content-start"
+          [collectionSize]="70"
+          [(page)]="page"
+        ></ngb-pagination>
+        <ngb-pagination
+          class="d-flex justify-content-center"
+          [collectionSize]="70"
+          [(page)]="page"
+        ></ngb-pagination>
+        <ngb-pagination
+          class="d-flex justify-content-end"
+          [collectionSize]="70"
+          [(page)]="page"
+        ></ngb-pagination>
+      </div>
+    </div>
+  </div>
+</div>
