@@ -1,0 +1,190 @@
+<div class="row">
+  <div class="col-lg-12">
+    <!-- ==================================-->
+    <!-- ========== Basic Alert ========== -->
+    <!-- ==================================-->
+    <div class="card w-100">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Basic Alert</h4>
+      </div>
+      <div class="card-body border-top">
+        <p *ngFor="let alert of alerts">
+          <ngb-alert [type]="alert.type" [dismissible]="false" class="customize-alert fs-5">
+            {{ alert.type }} - {{ alert.message }}
+          </ngb-alert>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12">
+    <!-- ==================================-->
+    <!-- ======== Outline Alert ========= -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Outline Alert</h4>
+      </div>
+      <div class="card-body border-top">
+        <ngb-alert
+          class="
+            bg-transparent
+            border-primary border
+            text-primary
+            d-flex
+            align-items-center
+            fs-5
+          "
+        >
+          <i
+            name="Info"
+            class="feather-sm flex-shrink-0 d-flex me-2"
+          ></i>
+          A simple primary light alert
+        </ngb-alert>
+        <ngb-alert
+          class="
+            bg-transparent
+            border-secondary border
+            text-secondary
+            d-flex
+            align-items-center
+            fs-5
+          "
+        >
+          <i
+            name="Info"
+            class="feather-sm flex-shrink-0 d-flex me-2"
+          ></i>
+          A simple secondary light alert
+        </ngb-alert>
+        <ngb-alert
+          class="
+            bg-transparent
+            border-success border
+            text-success
+            d-flex
+            align-items-center
+            fs-5
+          "
+        >
+          <i
+            name="Info"
+            class="feather-sm flex-shrink-0 d-flex me-2"
+          ></i>
+          A simple success light alert
+        </ngb-alert>
+        <ngb-alert
+          class="
+            bg-transparent
+            border-danger border
+            text-danger
+            d-flex
+            align-items-center
+            fs-5
+          "
+        >
+          <i
+            name="Info"
+            class="feather-sm flex-shrink-0 d-flex me-2"
+          ></i>
+          A simple danger light alert
+        </ngb-alert>
+        <ngb-alert
+          class="
+            bg-transparent
+            border-warning border
+            text-warning
+            d-flex
+            align-items-center
+            fs-5
+          "
+        >
+          <i
+            name="Info"
+            class="feather-sm flex-shrink-0 d-flex me-2"
+          ></i>
+          A simple warning light alert
+        </ngb-alert>
+        <ngb-alert
+          class="
+            bg-transparent
+            border-info border
+            text-info
+            d-flex
+            align-items-center
+            fs-5
+          "
+        >
+          <i
+            name="Info"
+            class="feather-sm flex-shrink-0 d-flex me-2"
+          ></i>
+          A simple info light alert
+        </ngb-alert>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-lg-12">
+    <!-- ==================================-->
+    <!-- ======= Self Closable Alert ===== -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Self Closing Alert</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Static self-closing alert that disappears after 20 seconds (refresh
+          the page if it has already disappeared)
+        </h6>
+        <ngb-alert type="info" class="font-medium fs-5" *ngIf="!staticAlertClosed" (close)="staticAlertClosed = true"
+          >Check out our awesome new features!</ngb-alert
+        >
+        <p>
+          Show a self-closing success message that disappears after 5 seconds.
+        </p>
+        <ngb-alert
+          *ngIf="successMessage"
+          type="success" class="font-medium fs-5"
+          (close)="successMessage = null"
+          >{{ successMessage }}</ngb-alert
+        >
+        <p>
+          <button class="btn btn-primary" (click)="changeSuccessMessage()">
+            Change message
+          </button>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12">
+    <!-- ==================================-->
+    <!-- ======= Custom Alert ===== -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Custom Alert</h4>
+      </div>
+      <div class="card-body border-top">
+        <ngb-alert type="custom" [dismissible]="false"
+          ><strong>Whoa!</strong> This is a custom alert.</ngb-alert
+        >
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Global Configuration of Alert</h4>
+      </div>
+      <div class="card-body border-top">
+        <p>
+          <ngb-alert type="secondary" class="font-medium fs-5">
+            This alert's type is success and it's not dismissible because the
+            config has been customized
+          </ngb-alert>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,303 @@
+// 
+// Custom layout variables
+// 
+@import "https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900";
+
+// 
+// Theme Global setting colors
+// 
+$themecolor: #009efb;
+$themecolor-dark: #028ee1;
+$themecolor-alt: #26c6da;
+$theme-light: #fff;
+$theme-dark: #212529;
+
+$skin1: #009efb;
+$skin6: #fff;
+
+// 
+// Topbar settings
+// 
+
+$topbar: $theme-light;
+$topbar-height: 64px;
+$topbar-navlink-padding: 0px 14px;
+$topbar-navlink-font-size: 1rem;
+$topbar-navlink-height: 64px;
+$topbar-navbrand-padding: 0 10px 0 10px;
+
+// 
+// Sidebar settings
+// 
+
+$sidebar: $theme-light;
+$sidebar-text: #fff;
+$sidebar-icons: #fff;
+$sidebar-text-dark: #212529;
+$sidebar-icons-dark: #4f5467;
+
+$sidebar-width-full: 250px;
+$sidebar-width-mini: 65px;
+
+// 
+// Layout settings
+// 
+$page-wrapper-max-width: 1300px;
+
+// 
+// Common settings
+// 
+$shadow: 1px 0px 20px rgba(0, 0, 0, 0.08);
+$transitions: 0.2s ease-in;
+$transparent-dark-bg: rgba(0, 0, 0, 0.05);
+
+// 
+// Bootstrap override colors
+// 
+$white: #fff !default;
+$gray-100: #ebf3f5 !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #90a4ae !default;
+$gray-600: #868e96 !default;
+$gray-700: #4f5467 !default;
+$gray-800: #263238 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$blue: #009efb !default;
+$indigo: #6610f2 !default;
+$purple: #7460ee !default;
+$pink: #e83e8c !default;
+$red: #f62d51 !default;
+$orange: #fb8c00 !default;
+$yellow: #ffbc34 !default;
+$green: #39c449 !default;
+$teal: #20c997 !default;
+$cyan: #4fc3f7 !default;
+$primary: #7460ee !default;
+$text-muted: $gray-500 !default;
+$inverse: #2f3d4a !default;
+
+
+$light-primary: #ddd8fd !default;
+$light-info: #aedcf7 !default;
+$light-warning: #ffedc9 !default;
+$light-danger: #f9e7eb !default;
+$light-success: #c5f7cb !default;
+
+$colors: (
+  "blue": $blue,
+  "indigo": $indigo,
+  "purple": $purple,
+  "pink": $pink,
+  "red": $red,
+  "orange": $orange,
+  "yellow": $yellow,
+  "green": $green,
+  "teal": $teal,
+  "cyan": $cyan,
+  "white": $white,
+  "gray": $gray-600,
+  "gray-dark": $gray-800,
+);
+
+$primary: $primary!default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $blue !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: $gray-800 !default;
+$muted: $gray-500 !default;
+$cyan: $cyan !default;
+$orange: $orange !default;
+$theme-colors: () !default;
+
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "muted": $muted,
+    "cyan": $cyan,
+    "orange": $orange,
+    "purple": $purple,
+    "light-primary": $light-primary,
+    "light-info": $light-info,
+    "light-warning": $light-warning,
+    "light-danger": $light-danger,
+    "light-success": $light-success,
+  ),
+  $theme-colors
+);
+
+// 
+// Enable optional
+// 
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+$enable-negative-margins: true;
+
+// 
+// Body
+// 
+$grid-gutter-width: 30px !default;
+$main-body-bg: #fff !default;
+$body-bg: #f2f7f8;
+$body-color: #54667a !default;
+
+// 
+// Typography
+// 
+$font-size-base: 1rem;
+$font-family-sans-serif: "Rubik", sans-serif !default;
+
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-medium: 400 !default;
+$font-weight-bold: 500 !default;
+$font-weight-base: 300 !default;
+
+$h1-font-size: 36px !default;
+$h2-font-size: 24px !default;
+$h3-font-size: 21px !default;
+$h4-font-size: 18px !default;
+$h5-font-size: 16px !default;
+$h6-font-size: 14px !default;
+
+$headings-margin-bottom: 8px !default;
+$headings-font-weight: 400 !default;
+$headings-color:  #2c2b2e !default;
+
+// Font size
+$font-sizes: (
+  1: 10px,
+  2: 12px,
+  3: 14px,
+  4: 16px,
+  5: 18px,
+  6: 20px,
+  7: 24px,
+);
+
+$display-font-sizes: (
+  1: 5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem,
+  7: 2rem
+) !default;
+
+// 
+// Cards
+// 
+$card-spacer-y: 1.25rem !default;
+$card-spacer-x: 1.25rem !default;
+$card-border-width: 0px !default;
+$card-border-radius: 0.25rem !default;
+$card-border-color: transparent !default;
+$card-columns-margin: 20px !default;
+
+// 
+// Buttons
+// 
+$btn-secondary-border: $gray-300;
+$btn-border-radius: 4px !default;
+$btn-border-radius-sm: 4px !default;
+$btn-border-radius-lg: 4px !default;
+$btn-box-shadow: none !default;
+$btn-focus-box-shadow: none !default;
+$btn-close-focus-shadow:     none !default;
+
+// 
+// Progressbar
+// 
+$progress-bg: $gray-100;
+
+// 
+// Tables
+// 
+$table-bg-accent: $gray-100;
+$table-bg-hover: $gray-100;
+$table-hover-bg: $gray-100 !default;
+$table-cell-padding-y: 1rem !default;
+$table-cell-padding-x: 1rem !default;
+$table-border-color: $gray-200;
+$table-striped-bg: $light !default;
+$table-group-separator-color: $gray-200;
+
+// 
+// Components
+// 
+$component-active-color: $white !default;
+$component-active-bg: $themecolor !default;
+$badge-font-weight: 400 !default;
+$badge-pill-padding-x: 0.5rem !default;
+$badge-font-size: 0.75rem !default;
+$badge-padding-y: 3px !default;
+$badge-padding-x: 10px !default;
+
+// 
+// border
+// 
+
+$border-width: 1px !default;
+$border-color: $gray-200 !default;
+$border-radius: 4px !default;
+$border-radius-lg: 5px !default;
+$border-radius-sm: 1px !default;
+
+// Dropdowns
+
+$dropdown-item-padding-x: 1rem !default;
+$dropdown-item-padding-y: 0.65rem !default;
+$dropdown-border-color: $gray-200;
+$dropdown-divider-bg: $gray-100;
+
+// 
+// Progressbars
+// 
+$progress-height: 5px !default;
+
+// 
+// Tabs
+// 
+$nav-tabs-link-active-bg: $white !default;
+
+// 
+// Grid breakpoints
+// 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1600px,
+) !default;
+
+// 
+// Navbar
+// 
+$navbar-dark-color: rgba($white, 0.8) !default;
+$navbar-dark-hover-color: rgba($white, 1) !default;
+
+// form
+$input-border-color: $gray-200;
+$input-color: #54667a;
+$input-font-weight: 400;

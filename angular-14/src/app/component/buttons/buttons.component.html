@@ -1,0 +1,327 @@
+<div class="row">
+  <div class="col-lg-12">
+    <!-- ==================================-->
+    <!-- ======= General Button ===== -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">General Buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-success</code> to quickly create a General
+          btn.
+        </h6>
+        <div class="button-group">
+          <button
+            type="button"
+            *ngFor="let buttondata of buttonsdata"
+            class="btn btn-{{ buttondata.btn }}"
+          >
+            {{ buttondata.btn }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- ======= Outline Button ===== -->
+  <!-- ==================================-->
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Button with outline</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-outline-success</code> to quickly create a
+          General btn.
+        </h6>
+        <div class="button-group">
+          <button
+            type="button"
+            *ngFor="let buttondata of buttonsdata"
+            class="btn btn-outline-{{ buttondata.btn }}"
+          >
+            {{ buttondata.btn }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- ======= Outline Button ===== -->
+  <!-- ==================================-->
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Rounded Buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-rounded btn-success</code> to quickly
+          create a General btn.
+        </h6>
+        <div class="button-group">
+          <button
+            type="button"
+            *ngFor="let buttondata of buttonsdata"
+            class="btn btn-rounded btn-{{ buttondata.btn }}"
+          >
+            {{ buttondata.btn }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- ======= Button size ===== -->
+  <!-- ==================================-->
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Button Sizes</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-lg btn-success</code> to quickly create a
+          General btn.
+        </h6>
+        <div class="button-group">
+          <button type="button" class="btn btn-lg btn-primary">
+            Large .btn-lg
+          </button>
+          <button type="button" class="btn btn-secondary">Normal .btn</button>
+          <button type="button" class="btn btn-sm btn-success">
+            Small .btn-sm
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <!-- ==================================-->
+    <!-- ======= block Button ===== -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Block buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn d-block w-100 btn-success</code> to quickly create
+          a General btn.
+        </h6>
+        <div class="row button-group">
+          <div
+            class="col-lg-2 col-md-4 d-grid"
+            *ngFor="let buttondata of buttonsdata"
+          >
+            <button type="button" class="btn btn-{{ buttondata.btn }}">
+              {{ buttondata.btn }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================================-->
+    <!-- ======= block Outline ===== -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Block outline buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-outline-success</code> to quickly create a
+          General btn.
+        </h6>
+        <div class="row button-group">
+          <div
+            class="col-lg-2 col-md-4 d-grid"
+            *ngFor="let buttondata of buttonsdata"
+          >
+            <button type="button" class="btn btn-outline-{{ buttondata.btn }}">
+              {{ buttondata.btn }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==================================-->
+    <!-- ======= large block Button ===== -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Large Block buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn d-block w-100 btn-lg btn-success</code> to quickly
+          create a General btn.
+        </h6>
+        <div class="row button-group">
+          <div
+            class="col-lg-2 col-md-4 d-grid"
+            *ngFor="let buttondata of buttonsdata"
+          >
+            <button type="button" class="btn btn-lg btn-{{ buttondata.btn }}">
+              {{ buttondata.btn }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Row -->
+<!-- ==================================-->
+<!-- =======checkbox Button ===== -->
+<!-- ==================================-->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Checkbox buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <div
+          class="btn-group"
+          role="group"
+          aria-label="Basic checkbox toggle button group"
+        >
+          <input
+            type="checkbox"
+            class="btn-check"
+            [(ngModel)]="model.left"
+            id="btncheck1"
+          />
+          <label class="btn btn-outline-primary" for="btncheck1">Left</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            [(ngModel)]="model.middle"
+            id="btncheck2"
+          />
+          <label class="btn btn-outline-primary" for="btncheck2">Middle</label>
+
+          <input
+            type="checkbox"
+            class="btn-check"
+            [(ngModel)]="model.right"
+            id="btncheck3"
+          />
+          <label class="btn btn-outline-primary" for="btncheck3">Right</label>
+        </div>
+        <pre class="p-2 bg-light rounded-3 mt-3"><code >{{ model | json }}</code></pre>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- =======checbox Button ===== -->
+  <!-- ==================================-->
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Checkbox buttons(Reactive Forms)</h4>
+      </div>
+      <div class="card-body border-top">
+        <form [formGroup]="checkboxGroupForm">
+          <div class="btn-group btn-group-toggle">
+            <input
+              type="checkbox"
+              class="btn-check"
+              formControlName="left"
+              id="btncheck4"
+            />
+            <label class="btn btn-outline-primary" for="btncheck4">Left</label>
+
+            <input
+              type="checkbox"
+              class="btn-check"
+              formControlName="middle"
+              id="btncheck5"
+            />
+            <label class="btn btn-outline-primary" for="btncheck5"
+              >Middle</label
+            >
+
+            <input
+              type="checkbox"
+              class="btn-check"
+              formControlName="right"
+              id="btncheck6"
+            />
+            <label class="btn btn-outline-primary" for="btncheck6">Right</label>
+          </div>
+        </form>
+        <pre class="p-2 bg-light rounded-3 mt-3"><code>{{ checkboxGroupForm.value | json }}</code></pre>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- =======Radio Button ===== -->
+  <!-- ==================================-->
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Radio Buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <div
+          class="btn-group btn-group-toggle"
+          ngbRadioGroup
+          name="radioBasic"
+          [(ngModel)]="model1"
+        >
+          <label ngbButtonLabel class="btn-primary">
+            <input ngbButton type="radio" [value]="1" /> Left (pre-checked)
+          </label>
+          <label ngbButtonLabel class="btn-primary">
+            <input ngbButton type="radio" value="middle" /> Middle
+          </label>
+          <label ngbButtonLabel class="btn-primary">
+            <input ngbButton type="radio" [value]="false" /> Right
+          </label>
+        </div>
+        <pre class="p-2 bg-light rounded-3 mt-3 fs-4">{{ model1 }}</pre>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- =======Radio Button ===== -->
+  <!-- ==================================-->
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Radio Buttons(Reactive Forms)</h4>
+      </div>
+      <div class="card-body border-top">
+        <form [formGroup]="radioGroupForm">
+          <div
+            class="btn-group btn-group-toggle"
+            ngbRadioGroup
+            name="radioBasic"
+            formControlName="model"
+          >
+            <label ngbButtonLabel class="btn-primary">
+              <input ngbButton type="radio" [value]="1" /> Left (pre-checked)
+            </label>
+            <label ngbButtonLabel class="btn-primary">
+              <input ngbButton type="radio" value="middle" /> Middle
+            </label>
+            <label ngbButtonLabel class="btn-primary">
+              <input ngbButton type="radio" [value]="false" /> Right
+            </label>
+          </div>
+        </form>
+        <pre class="p-2 bg-light rounded-3 mt-3 fs-4">{{ radioGroupForm.value["model"] }}</pre>
+      </div>
+    </div>
+  </div>
+</div>

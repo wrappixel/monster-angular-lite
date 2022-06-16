@@ -1,0 +1,80 @@
+// Sidebar
+$sidebar-link-padding: 14px 15px;
+$sidebar-icon-size: 18px;
+$sidebar-first-level-padding: 0 0 10px 0;
+$sidebar-first-level-link-padding: 10px 15px;
+$sidebar-first-level-icon-size: 14px;
+
+/*******************
+Main sidebar
+******************/
+
+.left-sidebar {
+  position: absolute;
+  width: $sidebar-width-full;
+  height: 100%;
+  top: 0px;
+  z-index: 99;
+  padding-top: 64px;
+  background: $sidebar;
+  box-shadow: $shadow;
+  transition: 0.2s ease-in;
+}
+
+/*******************
+sidebar navigation
+******************/
+
+.sidebar-nav {
+  ul {
+    .sidebar-item {
+      width: $sidebar-width-full;
+      .sidebar-link {
+        color: $sidebar-text;
+        padding: $sidebar-link-padding;
+        display: flex;
+        white-space: nowrap;
+        align-items: center;
+        line-height: 25px;
+        opacity: 0.6;
+        i {
+          font-style: normal;
+          width: 35px;
+          line-height: 25px;
+          font-size: $sidebar-icon-size;
+          color: $sidebar-icons;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        &.active,
+        &:hover {
+          opacity: 1;
+          .feather {
+            color: $white;
+          }
+        }
+      }
+      &.active > .sidebar-link {
+        /*background: rgba(0, 0, 0, 0.04);*/
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/*******************
+ common m-p removed
+******************/
+.sidebar-nav {
+  ul {
+    margin: 0px;
+    padding: 0px;
+    li {
+      list-style: none;
+    }
+  }
+}
+.collapse.in {
+  display: block;
+}
