@@ -1,0 +1,146 @@
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Project Listing</h4>
+        <h5 class="card-subtitle text-muted">Overview of the projects</h5>
+        <div class="table-responsive">
+          <table class="table align-middle text-nowrap">
+              <thead>
+                  <tr>
+                      <th class="text-dark font-medium fs-4">Team Lead</th>
+                      <th class="text-dark font-medium fs-4">Project</th>
+                      <th class="text-dark font-medium fs-4">Status</th>
+                      <th class="text-dark font-medium fs-4">Weeks</th>
+                      <th class="text-dark font-medium fs-4">Budget</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor='let ts of topSelling'>
+                      <td>
+                          <div class="d-flex align-items-center">
+                              <img [src]=ts.image alt="user" width="45" class="rounded-circle">
+                              <div class="ms-3">
+                                  <h5 class="mb-0 font-medium">{{ts.uname}}</h5>
+                                  <span class="text-muted">{{ts.gmail}}</span>
+                              </div>
+                          </div>
+                      </td>
+                      <td class="fs-4">{{ts.productName}}</td>
+                      <td>
+                          <span class="p-2 bg-{{ts.status}} rounded-circle d-inline-block ms-3"></span>
+                      </td>
+                      
+                      <td>
+                          <h5 class="mb-0 fw-normal">{{ts.weeks}}</h5>
+                      </td>
+                      <td>
+                          <h5 class="mb-0 fw-normal">{{ts.budget}}</h5>
+                      </td>
+                  </tr>              
+              </tbody>
+          </table>
+      </div>
+      </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Table with Border</h4>
+            <div class="table-responsive">
+                <table class="table table-bordered align-middle text-nowrap">
+                    <thead>
+                        <tr>
+                            <th class="text-dark font-medium fs-4">#</th>
+                            <th class="text-dark font-medium fs-4">First Name</th>
+                            <th class="text-dark font-medium fs-4">Last Name</th>
+                            <th class="text-dark font-medium fs-4">Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let tr of trow; index as i'>
+                            <td>
+                                {{ i + 1 }}
+                            </td>
+                            <td>
+                                {{tr.fname}}
+                            </td>
+                            <td>
+                                {{tr.lname}}
+                            </td>
+                            <td>
+                                {{tr.uname}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Table Hover</h4>
+            <div class="table-responsive">
+                <table class="table table-hover align-middle text-nowrap table-bordered">
+                    <thead>
+                        <tr>
+                            <th class="text-dark font-medium fs-4">#</th>
+                            <th class="text-dark font-medium fs-4">First Name</th>
+                            <th class="text-dark font-medium fs-4">Last Name</th>
+                            <th class="text-dark font-medium fs-4">Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let tr of trow; index as i'>
+                            <td>
+                                {{ i + 1 }}
+                            </td>
+                            <td>
+                                {{tr.fname}}
+                            </td>
+                            <td>
+                                {{tr.lname}}
+                            </td>
+                            <td>
+                                {{tr.uname}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Table Striped</h4>
+            <div class="table-responsive">
+                <table class="table table-hover align-middle text-nowrap table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th class="text-dark font-medium fs-4">#</th>
+                            <th class="text-dark font-medium fs-4">First Name</th>
+                            <th class="text-dark font-medium fs-4">Last Name</th>
+                            <th class="text-dark font-medium fs-4">Username</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor='let tr of trow; index as i'>
+                            <td>
+                                {{ i + 1 }}
+                            </td>
+                            <td>
+                                {{tr.fname}}
+                            </td>
+                            <td>
+                                {{tr.lname}}
+                            </td>
+                            <td>
+                                {{tr.uname}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,129 @@
+// App
+
+/*============================================================== 
+ For all pages 
+ ============================================================== */
+
+#main-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.page-wrapper {
+  background: $body-bg;
+  position: relative;
+  transition: 0.2s ease-in;
+}
+
+.page-wrapper > .container-fluid {
+  padding: 20px;
+  min-height: calc(100vh - 180px);
+  max-width: $page-wrapper-max-width;
+  margin: 0 auto;
+}
+
+/*******************
+Footer
+*******************/
+
+.footer {
+  padding: 15px 20px;
+}
+
+/*******************
+Vertical layout
+*******************/
+
+#main-wrapper[data-layout="vertical"] {
+  /*Vertical*/
+  .topbar .top-navbar .navbar-header {
+    //width: $sidebar-width-full;
+    transition: 0.2s ease-in;
+  }
+
+  /*sidebar type*/
+  &[data-sidebartype="full"] {
+    .page-wrapper {
+      margin-left: $sidebar-width-full;
+    }
+  }
+}
+
+/*******************
+Vertical responsive layout
+*******************/
+
+@include media-breakpoint-up(md) {
+  #main-wrapper[data-layout="vertical"] {
+    /*Vertical*/
+    &[data-sidebartype="full"] {
+      .topbar .top-navbar .navbar-header {
+        width: $sidebar-width-full;
+      }
+    }
+    /*Sidebar position*/
+    &[data-sidebar-position="fixed"][data-sidebartype="full"] {
+      .topbar .top-navbar .navbar-collapse {
+        margin-left: $sidebar-width-full;
+      }
+    }
+    &[data-sidebar-position="fixed"][data-sidebartype="mini-sidebar"] {
+      .topbar .top-navbar .navbar-collapse {
+        margin-left: $sidebar-width-mini;
+      }
+    }
+    /*Vertical with mini-sidebar*/
+    &[data-sidebartype="mini-sidebar"] {
+      .topbar .top-navbar .navbar-header {
+        width: $sidebar-width-mini;
+        .logo-text {
+          display: none;
+        }
+        &.expand-logo {
+          width: $sidebar-width-full;
+          .logo-text {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  #main-wrapper {
+    &[data-layout="vertical"][data-sidebartype="full"] {
+      .page-wrapper {
+        margin-left: 0;
+      }
+    }
+
+    &[data-sidebartype="full"] {
+      .left-sidebar {
+        left: -$sidebar-width-full;
+      }
+    }
+    &.show-sidebar {
+      .left-sidebar {
+        left: 0;
+      }
+    }
+    &[data-layout="vertical"][data-sidebar-position="fixed"] {
+      .topbar .top-navbar {
+        .navbar-collapse {
+          position: relative;
+          top: $topbar-height;
+        }
+      }
+    }
+    /*Header position*/
+    &[data-layout="vertical"][data-header-position="fixed"][data-sidebar-position="fixed"] {
+      .topbar .top-navbar {
+        .navbar-collapse {
+          position: relative;
+          top: $topbar-height;
+        }
+      }
+    }
+  }
+}
