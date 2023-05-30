@@ -1,0 +1,79 @@
+// scafholding
+* {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: $body-color;
+  background: $main-body-bg;
+  position: relative;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+a {
+  color: $themecolor;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a.link {
+  color: $body-color;
+  &:hover,
+  &:focus {
+    color: $themecolor;
+  }
+}
+
+// 
+// Font weight
+// 
+
+html body {
+  .font-medium {
+    font-weight: $font-weight-medium;
+  }
+}
+
+// 
+// Round
+// 
+.round {
+  line-height: 48px;
+  width: 50px;
+  height: 50px;
+  background: $blue;
+  line-height: 52px;
+}
+
+.round-lg {
+  line-height: 65px;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+}
+
+.round-sm {
+  width: 40px;
+  height: 40px;
+}
+
+.button-group {
+  .btn {
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+.op-5 {
+  opacity: 0.5;
+}
