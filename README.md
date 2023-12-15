@@ -122,7 +122,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 <ul>
 <li><a href="https://www.wrappixel.com/templates/category/admin-template/">Free Dashboard Templates</a> from WrapPixel</li>
 <li><a href="https://www.wrappixel.com/">Free Bootstrap Templates</a> from WrapPixel</li>
-<li><a href="https://www.wrappixel.com/templates/category/bootstrap-admin-templates/">Bootstrap 5 Admin Template</a> Free from WrapPixel</li>
+<li><a href="https://www.wrappixel.com/templates/category/bootstrap-admin-templates/">Bootstrap Admin Template</a> Free from WrapPixel</li>
 <li><a href="https://www.wrappixel.com/templates/category/angular-templates/">Free Angular Templates</a> from WrapPixel</li>
 <li><a href="https://www.wrappixel.com/templates/category/react-templates/">React Dashboard Template</a> from WrapPixel</li>
 <li><a href="https://www.wrappixel.com/templates/category/vuejs-templates/">Vuetify Template</a> from WrapPixel</li>
