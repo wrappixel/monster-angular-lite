@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-md-6 col-lg-3" *ngFor='let topcard of topcards'>
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex align-items-center">
+                    <div class="btn btn-lg rounded-circle round round-lg fs-6 d-flex align-items-center justify-content-center bg-light-{{topcard.bgcolor}} text-{{topcard.bgcolor}}">
+                        <i class={{topcard.icon}}></i>
+                    </div>
+                    <div class="ms-3">
+                        <h3 class="mb-0 font-weight-bold">{{topcard.title}}</h3>
+                        <small class="text-muted fs-3">{{topcard.subtitle}}</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

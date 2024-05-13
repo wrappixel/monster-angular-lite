@@ -1,0 +1,457 @@
+<div class="row">
+  <div class="col-lg-12">
+    <!-- ==================================-->
+    <!-- ======= General Button ===== -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">General Buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-success</code> to quickly create a General
+          btn.
+        </h6>
+        <div class="button-group">
+          <button
+            type="button"
+            *ngFor="let buttondata of buttonsdata"
+            class="btn btn-{{ buttondata.btn }}"
+          >
+            {{ buttondata.btn }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-12">
+    <!-- ==================================-->
+    <!-- ======= Light Button ===== -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Light Buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-success</code> to quickly create a Light
+          btn.
+        </h6>
+        <div class="button-group">
+          <button
+            type="button"
+            *ngFor="let buttondata of buttonsdata"
+            class="btn btn-light-{{ buttondata.btn }} text-{{ buttondata.btn }}"
+          >
+            {{ buttondata.btn }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- ======= Outline Button ===== -->
+  <!-- ==================================-->
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Button with outline</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-outline-success</code> to quickly create a
+          General btn.
+        </h6>
+        <div class="button-group">
+          <button
+            type="button"
+            *ngFor="let buttondata of buttonsdata"
+            class="btn btn-outline-{{ buttondata.btn }}"
+          >
+            {{ buttondata.btn }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- ======= Outline Button ===== -->
+  <!-- ==================================-->
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Rounded Buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-rounded btn-success</code> to quickly
+          create a General btn.
+        </h6>
+        <div class="button-group">
+          <button
+            type="button"
+            *ngFor="let buttondata of buttonsdata"
+            class="btn btn-rounded btn-{{ buttondata.btn }}"
+          >
+            {{ buttondata.btn }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- ======= Rounded Outline Button ===== -->
+  <!-- ==================================-->
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Rounded outlined Buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-rounded btn-outline-success</code> to
+          quickly create a General btn.
+        </h6>
+        <div class="button-group">
+          <button
+            type="button"
+            *ngFor="let buttondata of buttonsdata"
+            class="btn btn-rounded btn-outline-{{ buttondata.btn }}"
+          >
+            {{ buttondata.btn }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- ======= Button size ===== -->
+  <!-- ==================================-->
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Button Sizes</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-lg btn-success</code> to quickly create a
+          General btn.
+        </h6>
+        <div class="button-group">
+          <button type="button" class="btn btn-lg btn-primary">
+            Large .btn-lg
+          </button>
+          <button type="button" class="btn btn-secondary">Normal .btn</button>
+          <button type="button" class="btn btn-sm btn-success">
+            Small .btn-sm
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================================-->
+  <!-- ======= Rounded Button ===== -->
+  <!-- ==================================-->
+  <div class="col-lg-6">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Button Sizes with rounded</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-lg btn-rounded btn-success</code> to
+          create a btn.
+        </h6>
+        <div class="button-group">
+          <button type="button" class="btn btn-lg btn-rounded btn-primary">
+            Large .btn-lg
+          </button>
+          <button type="button" class="btn btn-rounded btn-secondary">
+            Normal .btn
+          </button>
+          <button type="button" class="btn btn-rounded btn-sm btn-success">
+            Small .btn-sm
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <!-- ==================================-->
+    <!-- ======= block Button ===== -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Block buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn d-block w-100 btn-success</code> to quickly create
+          a General btn.
+        </h6>
+        <div class="row button-group">
+          <div
+            class="col-lg-2 col-md-4 d-grid"
+            *ngFor="let buttondata of buttonsdata"
+          >
+            <button type="button" class="btn btn-{{ buttondata.btn }}">
+              {{ buttondata.btn }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================================-->
+    <!-- ======= Rounded block Button ===== -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Rounded Block buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-success</code> to quickly create a General
+          btn.
+        </h6>
+        <div class="row button-group">
+          <div
+            class="col-lg-2 col-md-4 d-grid"
+            *ngFor="let buttondata of buttonsdata"
+          >
+            <button
+              type="button"
+              class="btn btn-rounded btn-{{ buttondata.btn }}"
+            >
+              {{ buttondata.btn }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==================================-->
+    <!-- ======= block Outline ===== -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Block outline buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-outline-success</code> to quickly create a
+          General btn.
+        </h6>
+        <div class="row button-group">
+          <div
+            class="col-lg-2 col-md-4 d-grid"
+            *ngFor="let buttondata of buttonsdata"
+          >
+            <button type="button" class="btn btn-outline-{{ buttondata.btn }}">
+              {{ buttondata.btn }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================================-->
+    <!-- ======= Rounded block block Button ===== -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Rounded outline Block buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-outline-success</code> to quickly create a
+          General btn.
+        </h6>
+        <div class="row button-group">
+          <div
+            class="col-lg-2 col-md-4 d-grid"
+            *ngFor="let buttondata of buttonsdata"
+          >
+            <button
+              type="button"
+              class="btn btn-rounded btn-outline-{{ buttondata.btn }}"
+            >
+              {{ buttondata.btn }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ==================================-->
+    <!-- ======= large block Button ===== -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Large Block buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn d-block w-100 btn-lg btn-success</code> to quickly
+          create a General btn.
+        </h6>
+        <div class="row button-group">
+          <div
+            class="col-lg-2 col-md-4 d-grid"
+            *ngFor="let buttondata of buttonsdata"
+          >
+            <button type="button" class="btn btn-lg btn-{{ buttondata.btn }}">
+              {{ buttondata.btn }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Row -->
+<!-- ==================================-->
+<!-- =======icon Button ===== -->
+<!-- ==================================-->
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Button with icon</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Use a classes <code>btn btn-success</code> &
+          <code>i class ="fa fa-heart"</code> to quickly create a General btn.
+        </h6>
+        <div class="row button-group">
+          <div class="col-lg-12 mb-4">
+            <button
+              type="button"
+              *ngFor="let buttondata of buttonsdata"
+              class="btn btn-{{ buttondata.btn }}"
+            >
+              <i class="bi bi-{{ buttondata.icon }} me-1"></i> {{ buttondata.btn }}
+            </button>
+          </div>
+          <div class="col-lg-12 mb-4">
+            <button
+              type="button"
+              *ngFor="let buttondata of buttonsdata"
+              class="btn btn-rounded btn-{{ buttondata.btn }}"
+            >
+            <i class="bi bi-{{ buttondata.icon }} me-1"></i> {{ buttondata.btn }}
+            </button>
+          </div>
+          <div class="col-lg-12 mb-4">
+            <button
+              type="button"
+              *ngFor="let buttondata of buttonsdata"
+              class="btn btn-outline-{{ buttondata.btn }}"
+            >
+              <i class="bi bi-{{ buttondata.icon }} me-1"></i> {{ buttondata.btn }}
+            </button>
+          </div>
+          <div class="col-lg-12 mb-4">
+            <button
+              type="button"
+              *ngFor="let buttondata of buttonsdata"
+              class="btn btn-rounded btn-outline-{{ buttondata.btn }}"
+            >
+              <i class="bi bi-{{ buttondata.icon }} me-1"></i> {{ buttondata.btn }}
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End row -->
+<!-- Row -->
+<!-- ==================================-->
+<!-- =======Group Button ===== -->
+<!-- ==================================-->
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Group buttons</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Wrap a series of buttons with
+          <code class="highlighter-rouge">.btn</code> in
+          <code class="highlighter-rouge">.btn-group</code>
+        </h6>
+        <div class="btn-group me-1" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-outline-secondary">Left</button>
+          <button type="button" class="btn btn-outline-secondary">
+            Middle
+          </button>
+          <button type="button" class="btn btn-outline-secondary">Right</button>
+        </div>
+        <div class="btn-group me-1" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-info">
+            <i class="bi bi-justify-left"></i>
+          </button>
+          <button type="button" class="btn btn-info">
+            <i class="bi bi-justify"></i>
+          </button>
+          <button type="button" class="btn btn-info">
+            <i class="bi bi-justify-right"></i>
+          </button>
+        </div>
+        <div class="btn-group me-1" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-success">
+            <i class="bi bi-skip-start"></i>
+          </button>
+          <button type="button" class="btn btn-success">
+            <i class="bi bi-play"></i>
+          </button>
+          <button type="button" class="btn btn-success">
+            <i class="bi bi-skip-end"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ==================================-->
+    <!-- =======Pagination Button ===== -->
+    <!-- ==================================-->
+    <div class="card">
+      <div class="p-3">
+        <h4 class="card-title mb-0">Button toolbar pagination</h4>
+      </div>
+      <div class="card-body border-top">
+        <h6 class="card-subtitle fw-normal mb-3">
+          Wrap a series of buttons with
+          <code class="highlighter-rouge">.btn</code> in
+          <code class="highlighter-rouge">.btn-group</code>
+        </h6>
+        <div
+          class="btn-toolbar"
+          role="toolbar"
+          aria-label="Toolbar with button groups"
+        >
+          <div class="btn-group me-2" role="group" aria-label="First group">
+            <button type="button" class="btn btn-outline-secondary disabled">
+              1
+            </button>
+            <button type="button" class="btn btn-info">2</button>
+            <button type="button" class="btn btn-outline-secondary">3</button>
+            <button type="button" class="btn btn-outline-secondary">4</button>
+          </div>
+          <div class="btn-group me-2" role="group" aria-label="Second group">
+            <button type="button" class="btn btn-outline-secondary">5</button>
+            <button type="button" class="btn btn-outline-secondary">6</button>
+            <button type="button" class="btn btn-outline-secondary">7</button>
+          </div>
+          <div class="btn-group" role="group" aria-label="Third group">
+            <button type="button" class="btn btn-outline-secondary">8</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Row -->
