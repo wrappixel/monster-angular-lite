@@ -1,4 +1,4 @@
-# <a href="https://demos.wrappixel.com/free-admin-templates/angular/monster-angular-free/angular/dashboard">Monster Angular Free</a>
+# <a href="https://monster-angular-free.netlify.app/dashboard">Monster Angular Free</a>
 Monster Angular Admin Dashboard
 
 <!-- Main image of Template -->
@@ -19,10 +19,10 @@ Monster Angular Admin Dashboard
 <tbody>
 <tr>
   <td>
-    <a href="https://demos.wrappixel.com/free-admin-templates/angular/monster-angular-free/angular/dashboard">Live Preview</a>
+    <a href="https://monster-angular-free.netlify.app/dashboard">Live Preview</a>
   </td>
   <td>
-  <a href="https://demos.wrappixel.com/free-admin-templates/angular/monster-angular-free/landingpage/index.html">Live Preview</a>
+  <a href="https://monster-angular-main.netlify.app/dashboard/dashboard1">Live Preview</a>
   </td>
 </tr>
 <tr>
@@ -139,7 +139,7 @@ Monster Angular Admin Dashboard
 </a>
 <p>
   Checkout our premium version of Monster Angular Admin Dashboard Template for lots more features and ready to use page templates.<br>
-  <a href="https://demos.wrappixel.com/free-admin-templates/angular/monster-angular-free/landingpage/index.html">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/monster-angular-dashboard/">Download</a>
+  <a href="https://monster-angular-main.netlify.app/dashboard/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/monster-angular-dashboard/">Download</a>
 </p>
 
 <!-- Versions of Template -->

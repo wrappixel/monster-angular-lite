@@ -68,7 +68,7 @@ export class SalesRatioComponent implements OnInit {
         bar: {
           columnWidth: '50%',
           barHeight: '70%',
-          borderRadius: 3,
+          borderRadius: 5,
         },
       },
       colors: ["#0d6efd", "#009efb", "#6771dc"],
