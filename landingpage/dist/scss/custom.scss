@@ -1,3 +1,5 @@
+@import "https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900";
+
 //landing page style
 .font-16{
     font-size: 16px;
@@ -9,6 +11,8 @@
 .live-box {
     position: relative;
     border:1px solid $gray-200;
+    height: 275px;
+    overflow: hidden;
     .overlay {
         position: absolute;
         width: 100%;

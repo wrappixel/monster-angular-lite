@@ -30,7 +30,7 @@ Monster Angular Admin Dashboard
       <a href="https://www.wrappixel.com/templates/monster-angular-lite/">Download Now</a>
   </td>
   <td>
-    <a href="https://www.wrappixel.com/templates/monster-angular-dashboard/">Purchase Now</a>
+    <a href="https://www.wrappixel.com/templates/monster-angular-dashboard/?ref=33">Purchase Now</a>
   </td>
 </tr>
 <tr>
@@ -134,12 +134,12 @@ Monster Angular Admin Dashboard
 
 # Upgrade to Premium version
 
-<a target="_blank" href="https://www.wrappixel.com/templates/monster-angular-dashboard/">
-  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/monster-angular-admin-y.jpg" alt="">
+<a target="_blank" href="https://www.wrappixel.com/templates/monster-angular-dashboard/?ref=33">
+  <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/monster-angular-dashboard-wpn.jpg" alt="">
 </a>
 <p>
   Checkout our premium version of Monster Angular Admin Dashboard Template for lots more features and ready to use page templates.<br>
-  <a href="https://monster-angular-main.netlify.app/dashboard/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/monster-angular-dashboard/">Download</a>
+  <a href="https://monster-angular-main.netlify.app/dashboard/dashboard1">Check Live Preview</a> | <a href="https://www.wrappixel.com/templates/monster-angular-dashboard/?ref=33">Download</a>
 </p>
 
 <!-- Versions of Template -->
@@ -147,7 +147,7 @@ Monster Angular Admin Dashboard
 <table>
 <thead>
 <tr>
-<th>Bootstrap</th>
+<th>Angular</th>
 <th>React Js</th>
 <th>Nuxt</th>
 <th>Next Js</th>
@@ -156,23 +156,23 @@ Monster Angular Admin Dashboard
 <tbody>
 <tr>
 <td>
-  <a href="https://www.wrappixel.com/templates/monsteradmin/" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/04/monster-bootstrap-admin-y.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/monster-angular-dashboard/?ref=33" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/monster-angular-dashboard-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/monster-react-admin/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2020/06/monster-react-admin-template-y-20.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/monster-react-admin/?ref=33" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/monster-react-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/materialpro-nuxtjs/" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/07/materialpro-nuxtjs.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/materialpro-nuxtjs/?ref=33" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/materialpro-nuxtjs-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 <td>
-  <a href="https://www.wrappixel.com/templates/monster-nextjs-admin-dashboard/" rel="nofollow" width="150px">
-    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2022/01/monsternextjs.jpg" alt="" style="max-width:150px;">
+  <a href="https://www.wrappixel.com/templates/monster-nextjs-admin-dashboard/?ref=33" rel="nofollow" width="150px">
+    <img src="https://www.wrappixel.com/wp-content/uploads/edd/2024/05/monster-nextjs-admin-wpn.jpg" alt="" style="max-width:150px;">
   </a>
 </td>
 </td>
