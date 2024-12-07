@@ -147,10 +147,10 @@ Monster Angular Admin Dashboard
 <table>
 <thead>
 <tr>
-<th>Angular</th>
-<th>React Js</th>
-<th>Nuxt</th>
-<th>Next Js</th>
+<th>MaterialPro Angular</th>
+<th>MaterialPro React Js</th>
+<th>MaterialPro Nuxt</th>
+<th>MaterialPro Next Js</th>
 </tr>
 </thead>
 <tbody>
@@ -187,11 +187,11 @@ Monster Angular Admin Dashboard
 
 <!-- Useful Links of Template -->
 # Useful Links
-- <p><a href="https://www.wrappixel.com/">Admin Theme</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/materialpro/">Bootstrap Themes</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/materialpro-lite/">Free Bootstrap Admin Templates</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/materialpro-react-redux-admin/">React Bootstrap Template</a> from Wrappixel</p>
-- <p><a href="https://www.wrappixel.com/templates/materialpro-vuetify-admin/">Vuejs Templates</a> from Wrappixel</p>
+- <p><a href="[https://www.wrappixel.com/](https://www.wrappixel.com/templates/category/admin-dashboard-templates/)">Admin Templates</a> from Wrappixel</p>
+- <p><a href="https://www.wrappixel.com/templates/category/bootstrap-admin-dashboard-template/">Bootstrap Admin Templates</a> from Wrappixel</p>
+- <p><a href="https://www.wrappixel.com/templates/category/nextjs-templates/">Nextjs Templates</a> from Wrappixel</p>
+- <p><a href="https://www.wrappixel.com/templates/category/react-bootstrap-templates/">React Bootstrap Template</a> from Wrappixel</p>
+- <p><a href="https://www.wrappixel.com/templates/category/vuejs-templates/">Vuejs Templates</a> from Wrappixel</p>
 
 
 <!-- Licensing of Template -->
@@ -219,5 +219,5 @@ We make sure that our Premium & [Free admin dashboard templates](https://www.wra
 ### Features of Our Admin Dashboard Templates
 Our [Free Admin Panels](https://www.wrappixel.com/templates/category/free-admin-panel-templates/) helping developers & designers to build applications, tables, charts, forms, and pages for your project.
 
-If you're looking for [download free admin panel templates](https://www.wrappixel.com/templates/category/free-admin-panel-templates/) built with a specific framework, here are some options : [Bootstrap Admin Templates](https://www.wrappixel.com/templates/category/bootstrap-admin-dashboard-template/), [Angular templates](https://www.wrappixel.com/templates/category/angular-templates/), [React Templates](https://www.wrappixel.com/templates/category/react-templates/), [NextJS Admin Dashboards](https://www.wrappixel.com/templates/category/nextjs-dashboard/), [Vue Admin dashboards](https://www.wrappixel.com/templates/category/vue-dashboard/), [Tailwind CSS Admin Dashboards](https://www.wrappixel.com/templates/category/tailwind-dashboard/), [Vuetify Templates](https://www.wrappixel.com/templates/category/vuetify-templates/), [Nuxt Templates](https://www.wrappixel.com/templates/category/nuxt-templates/), [MUI Templates](https://www.wrappixel.com/templates/category/mui-templates/).
+If you're looking for [download free admin panel templates](https://www.wrappixel.com/templates/category/free-admin-panel-templates/) built with a specific framework, here are some options : [Download Bootstrap Admin Templates](https://www.wrappixel.com/templates/category/bootstrap-admin-dashboard-template/), [Angular templates](https://www.wrappixel.com/templates/category/angular-templates/), [React Templates](https://www.wrappixel.com/templates/category/react-templates/), [NextJS Admin Dashboards](https://www.wrappixel.com/templates/category/nextjs-dashboard/), [Vue Admin dashboards](https://www.wrappixel.com/templates/category/vue-dashboard/), [Tailwind CSS Admin Dashboards](https://www.wrappixel.com/templates/category/tailwind-dashboard/), [Vuetify Templates](https://www.wrappixel.com/templates/category/vuetify-templates/), [Nuxt Templates](https://www.wrappixel.com/templates/category/nuxt-templates/), [MUI Templates](https://www.wrappixel.com/templates/category/mui-templates/).
 
