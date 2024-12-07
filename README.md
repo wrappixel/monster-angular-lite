@@ -210,5 +210,14 @@ Monster Angular Admin Dashboard
 - <p>Discord: <a href="https://discord.com/invite/eMzE8F6Wqs">https://discord.com/invite/eMzE8F6Wqs</a></p>
 - <p>Youtube: <a href="https://www.youtube.com/channel/UCdFDlrhIchtxF8EmxejUPGQ">https://www.youtube.com/channel/UCdFDlrhIchtxF8EmxejUPGQ</a></p>
 
+All Our [Admin Templates](https://www.wrappixel.com/templates/category/admin-dashboard-templates/) are flexible, customizable, and responsive, helping you create stunning dashboards.
+### Well Coded </> Admin Templates
+Create beautifully designed web apps and products with Our [Finest Collection of Admin Templates](https://www.wrappixel.com/templates/category/admin-dashboard-templates/) and save a month in development timeline.
+### Our Admin Templates Passed A/B Testing, UI/UX Test
+We make sure that our Premium & [Free admin dashboard templates](https://www.wrappixel.com/templates/category/free-admin-panel-templates/) pass the test of time by conducting A/B testing and usability testing.
 
+### Features of Our Admin Dashboard Templates
+Our [Free Admin Panels](https://www.wrappixel.com/templates/category/free-admin-panel-templates/) helping developers & designers to build applications, tables, charts, forms, and pages for your project.
+
+If you're looking for [download free admin panel templates](https://www.wrappixel.com/templates/category/free-admin-panel-templates/) built with a specific framework, here are some options : [Bootstrap Admin Templates](https://www.wrappixel.com/templates/category/bootstrap-admin-dashboard-template/), [Angular templates](https://www.wrappixel.com/templates/category/angular-templates/), [React Templates](https://www.wrappixel.com/templates/category/react-templates/), [NextJS Admin Dashboards](https://www.wrappixel.com/templates/category/nextjs-dashboard/), [Vue Admin dashboards](https://www.wrappixel.com/templates/category/vue-dashboard/), [Tailwind CSS Admin Dashboards](https://www.wrappixel.com/templates/category/tailwind-dashboard/), [Vuetify Templates](https://www.wrappixel.com/templates/category/vuetify-templates/), [Nuxt Templates](https://www.wrappixel.com/templates/category/nuxt-templates/), [MUI Templates](https://www.wrappixel.com/templates/category/mui-templates/).
 
