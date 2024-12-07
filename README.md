@@ -210,7 +210,7 @@ Monster Angular Admin Dashboard
 - <p>Discord: <a href="https://discord.com/invite/eMzE8F6Wqs">https://discord.com/invite/eMzE8F6Wqs</a></p>
 - <p>Youtube: <a href="https://www.youtube.com/channel/UCdFDlrhIchtxF8EmxejUPGQ">https://www.youtube.com/channel/UCdFDlrhIchtxF8EmxejUPGQ</a></p>
 
-All Our [Admin Templates](https://www.wrappixel.com/templates/category/admin-dashboard-templates/) are flexible, customizable, and responsive, helping you create stunning dashboards.
+All Our [Dashboard Templates](https://www.wrappixel.com/templates/category/admin-dashboard-templates/) are flexible, customizable, and responsive, helping you create stunning dashboards.
 ### Well Coded </> Admin Templates
 Create beautifully designed web apps and products with Our [Finest Collection of Admin Templates](https://www.wrappixel.com/templates/category/admin-dashboard-templates/) and save a month in development timeline.
 ### Our Admin Templates Passed A/B Testing, UI/UX Test
